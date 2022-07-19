@@ -4,40 +4,49 @@
 }
 
 html, body {
-    height: 100%;
-  }
+  height: 100%;
+}
 
 h1, h2, h3, h4, h5, h6, p {
-    margin: 0;
-  }
+  margin: 0;
+}
 
-h1 {
+h1.logo {
+  font-size: 25px;
   font-family: Lexend;
 }
-
+  
 a {
   text-decoration: none;
-  color: black;
-  font-size: 30px;
-}
-
-header {
-  top: 0;
-  width: 100%;
-  padding: 25px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-}
-
-.global_nav_right {
-  position: relative;
-  right: -300px;
-  gap: 30px;
 }
   
-.hero-area {
+.main_header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: ". | <center> | <right>";
+    margin: 40px 40px 30px 30px;
+}
+  
+.main_header_left {
+  grid-area: <left>;
+  margin-left: 35px;
+}
+  
+.main_header_logo {
+  grid-area: <center>;
+  justify-self: center;
+}
+  
+.main_header_links {
+  grid-area: <right>;
+  justify-self: end;
+}
+  
+.header_link {
+  margin: 14px;
+}
+  
+/* .hero-area {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -60,9 +69,185 @@ header {
 h1.hero_text {
   color: white;
   font-size: 35px;
+  font-family: lexend;
   text-align: center;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   line-height: 35px;
   text-shadow: 2px 2px 2px #767679;
+} */
+
+/* Contact Container – Beginning */
+
+.contact_wrapper {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 20px 100px 100px;
+  box-sizing: border-box;
+  font-family: lexend;
+  /* height: 100vh;
+  width: 100% */
 }
-  
+
+.content_grid {
+  max-width: 650px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
+}
+
+.contact_left {
+	background: url("Images/Header/contact.jpg") no-repeat center;
+  background-position: bottom -27px right 0;
+	background-size: cover;
+  width: auto;
+  height: 175px;
+}
+
+.contact_main_content {
+	padding: 25px 40px;
+  max-width: 550px;
+}
+
+h2 {
+	position: relative;
+	padding: 0 0 10px;
+	margin-bottom: 10px;
+}
+
+.field {
+	width: 550px;
+	border: 2px solid rgba(0, 0, 0, 0);
+	outline: none;
+	background-color: rgba(230, 230, 230, 0.6);
+	padding: 0.5rem 1rem;
+	font-size: 1.1rem;
+	margin-bottom: 22px;
+	transition: .3s;
+  font-family: lexend;
+}
+
+textarea {
+	min-height: 150px;
+  font-family: lexend;
+}
+
+.btn {
+	width: 550px;
+	padding: 0.5rem 1rem;
+	background-color: #2ecc71;
+	color: #fff;
+	font-size: 1.1rem;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: .3s;
+}
+
+@media screen and (max-width: 880px){
+	.contact_container{
+		grid-template-columns: 1fr;
+	}
+	.contact_lid{
+		height: 200px;
+	}
+}
+
+/* Contact Container – End */
+
+/* Footer – Beginning */
+
+.footer_wrapper {
+  margin: 40px 40px;
+  border-radius: 13px;
+  display: flex;
+  flex-direction: column;
+  border: 3px solid #A1B4F8;
+}
+
+.footer_content {
+  display: flex;
+}
+
+.footer_headshot, .footer_text {
+  margin: 40px 20px 30px 30px;
+}
+
+.footer_headshot {
+  background-color: #FF8EDF;
+  opacity: 22%;
+  height: 300px;
+  width: 300px;
+  border-radius: 16px;
+}
+
+.footer_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 0px;
+  flex: 1;
+}
+
+h2.footer_title {
+  font-size: 21px;
+  font-family: lexend;
+  color: #4D504E;
+  font-weight: 375;
+}
+
+p.footer_greeting {
+  font-family: lexend;
+  font-size: 18px;
+  text-align: left;
+  font-weight: 275;
+  line-height: 135%;
+}
+
+.footer_buttons {
+  display: flex;
+  gap: 30px;
+  margin: 30px 0px;
+  font-size: 18px;
+  font-family: Lexend;
+  align-items: center;
+}
+
+a.footer_button_one {
+  color: black;
+  background-color: white;
+  padding: 12px;
+  border-radius: 9px;
+  text-align: center;
+  border: 2.7px solid;
+}
+
+a.footer_button_two {
+  color: black;
+  background-color: white;
+  padding: 12px;
+  border-radius: 9px;
+  text-align: center;
+  border: 2.7px solid #84C9A8;
+}
+
+.footer_button {
+  background-color: white;
+  border-radius: 13px;
+  padding: 11px;
+}
+
+p.copyright {
+  padding: 20px;
+  font-family: 'Inria Serif', serif;
+  text-align: center;
+  width: 100%;
+  font-weight: 200;
+}
+
+/* Footer – End */
