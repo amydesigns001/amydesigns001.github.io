@@ -1,5 +1,6 @@
-html, body {
-    height: 100%;
+body {
+    margin: 0;
+    padding: 0;
   }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -66,15 +67,19 @@ a.navbar_link {
 
 .grid_container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  /* grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas: "<left> | <center> | <right>";
+  grid-template-areas: "<left> | <center> | <right>"; */
+  grid-template-areas: 
+    "one two three"
+    "four five six"
+    "seven eight nine";
   justify-items: center;
   padding: 40px 90px;
 }
 
 .grid_item_left {
-  grid-area: <left>;
+  grid-area: one;
   height: 200px;
   width: 200px;
   border-radius: 50%;
@@ -82,7 +87,7 @@ a.navbar_link {
 }
 
 .grid_item_center {
-  grid-area: <center>;
+  grid-area: two;
   background-color: aliceblue;
   height: 200px;
   width: 200px;
@@ -91,7 +96,7 @@ a.navbar_link {
 }
 
 .grid_item_right {
-  grid-area: <right>;
+  grid-area: three;
   background-color: pink;
   height: 200px;
   width: 200px;
@@ -230,3 +235,11 @@ p.copyright {
 }
 
 /* Footer – End */
+
+@media (max-width: 800px) {
+  body {
+    background-color: pink;
+  }
+
+  .grid_container
+}

@@ -121,7 +121,7 @@ h2 {
 }
 
 .field {
-	width: 550px;
+	width: 500px;
 	border: 2px solid rgba(0, 0, 0, 0);
 	outline: none;
 	background-color: rgba(230, 230, 230, 0.6);
@@ -138,7 +138,7 @@ textarea {
 }
 
 .btn {
-	width: 550px;
+	width: 500px;
 	padding: 0.5rem 1rem;
 	background-color: #2ecc71;
 	color: #fff;
