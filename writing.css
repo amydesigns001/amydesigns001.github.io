@@ -1,50 +1,89 @@
-* {
-    padding: 0;
-    margin: 0;
+body {
+  margin: 0;
+  padding: 0;
 }
 
-html, body {
-    height: 100%;
-  }
-
 h1, h2, h3, h4, h5, h6, p {
-    margin: 0;
-  }
+  margin: 0;
+}
 
 h1.logo {
-  font-size: 25px;
-  font-family: Lexend;
+font-size: 25px;
+font-family: Lexend;
 }
 
 a {
-  text-decoration: none;
+text-decoration: none;
 }
 
 .main_header {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: ". | <center> | <right>";
-    margin: 40px 40px 30px 30px;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-areas: 
+"left center right";
+margin: 40px 40px 30px 30px;
 }
 
 .main_header_left {
-    grid-area: <left>;
-    margin-left: 35px;
+grid-area: left;
+justify-self: center;
+align-self: center;
 }
 
 .main_header_logo {
-    grid-area: <center>;
-    justify-self: center;
+grid-area: center;
+justify-self: center;
+align-self: center;
 }
 
 .main_header_links {
-    grid-area: <right>;
-    justify-self: end;
+grid-area: right;
+justify-self: end;
+align-self: center;
 }
 
 .header_link {
-    margin: 14px;
+margin: 14px;
 }
+/* NAVBAR - Beginning */
+
+.navbar_flexbox {
+display: flex;
+flex-direction: row;
+gap: 30px;
+align-items: center;
+justify-content: center;
+padding: 20px 0;
+}
+
+ul {
+list-style: none;
+padding: 0;
+}
+
+.nav_item {
+font-family: lexend;
+font-size: 17px;
+font-weight: 300;
+}
+
+.nav_decoration[aria-current="page"] {
+text-decoration: underline wavy #f8c348 0.15rem;
+text-underline-offset: 0.5rem;
+}
+
+.btn {
+text-decoration: none;
+color: var(--text);
+cursor: pointer;
+}
+
+.nav_decoration[aria-current="page"] {
+text-decoration: underline wavy #f8c348 0.15rem;
+text-underline-offset: 0.5rem;
+}
+
+/* NAVBAR - End */
 
 /* HERO BANNER – Beginning */
 
