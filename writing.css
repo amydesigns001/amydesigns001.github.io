@@ -226,6 +226,14 @@ p.copyright {
 /* Footer – End */
 
 @media (max-width: 390px) {
+  .body {
+    margin: 0;
+    padding: 0;
+  }
+
+  header {
+    z-index: 1;
+  }
 
   .main_header_logo {
     display: flex;
@@ -255,4 +263,102 @@ p.copyright {
     display: none;
   }
 
+
+  .navbar_flexbox {
+    text-align: center;
+    font-family: lexend;
+    position: absolute;
+    padding: 5rem;
+    margin-top: -6rem;
+    margin-left: -1rem;
+    top: 13rem;
+    left: 7.5rem;
+    list-style: none;
+    opacity: 0;
+    font-size: 11px;
+    border: 4px solid black;
+    background-color: black;
+    border-radius: 0.25em;
+    transform: translateX(-10%);
+    transition: transform 100ms ease-in-out, opacity 200ms;
+  }
+  .navbar_flexbox li{
+    color: white;
+    padding: 0.5rem;
+  }
+
+  .navbar_flexbox li a{
+    color: white;
+    text-decoration: none;
+  }
+
+  .navbar_flexbox li a:hover{
+    color: rgb(174, 174, 174);
+  }
+  
+  .check {
+    position: absolute;
+    top: 8rem;
+    left: 8rem;
+    height: 3rem;
+    width: 3rem;
+    opacity: 0;
+    z-index: 3;
+  }
+
+  .check:hover {
+    cursor: pointer;
+  }
+
+  .check:checked~.navbar_flexbox {
+    display: block;
+    transform: translateX(0%);
+    opacity: 1;
+  }
+
+  .hamburger {
+    height: 3rem;
+    width: 3rem;
+    position: absolute;
+    top: 8rem;
+    left: 8rem;
+    padding: 0.5rem;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: black;
+    border-radius: 0.25em;
+  }
+  
+  .hamburger .line {
+    background-color: white;
+    border-radius: 1em;
+    width: 2rem;
+    height: 0.25rem;
+  }
+
+  .hamburger .line1 {
+    transform-origin: 0% 0%;
+    transition: transform 100ms ease-in-out;
+  }
+
+  .hamburger .line3 {
+    transform-origin: 0% 100%;
+    transition: transform 100ms ease-in-out;
+  }
+
+  .check:checked~.hamburger .line1 {
+    display: block;
+    transform: rotate(45deg);
+  }
+
+  .check:checked~.hamburger .line2 {
+    opacity: 0;
+  }
+
+  .check:checked~.hamburger .line3 {
+    display: block;
+    transform: rotate(-45deg);
+  }
 }

@@ -1,11 +1,11 @@
 body {
-    margin: 0;
-    padding: 0;
-  }
+  margin: 0;
+  padding: 0;
+}
 
 h1, h2, h3, h4, h5, h6, p {
-    margin: 0;
-  }
+  margin: 0;
+}
 
 h1.logo {
   font-size: 25px;
@@ -45,6 +45,7 @@ a {
 .header_link {
   margin: 14px;
 }
+
 /* NAVBAR - Beginning */
 
 .navbar_flexbox {
@@ -85,6 +86,22 @@ ul {
 
 /* NAVBAR - End */
 
+/* HAMBURGER */
+
+.hamburger{
+  display: none;
+  cursor: pointer;
+}
+
+.bar{
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px 5px;
+  transition: all 0.3s ease;
+  background-color: #A1B4F8;
+  border-radius: 5px;
+}
 
 /* MAIN CONTENT – START */
 
@@ -257,18 +274,60 @@ p.copyright {
 /* Footer – End */
 
 @media (max-width: 390px) {
+  .main_header {
+    margin: 40px 20px 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
   .main_header_logo {
     display: flex;
-    flex-wrap: wrap;
   }
 
   .main_header_left {
     display: none;
   }
 
-  .main_header_links {
+  .header_link {
     display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+  
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .navbar_flexbox {
+    flex-direction: column;
+  }
+
+  .nav_item{
+    margin: 16px 0;
+  }
+  
+  .hamburger.active {
+    left: 50%;
+  }
+
+  .navbar_flexbox.active {
+    left: -100%;
+    top: 40px;
+    gap: 0;
+    background-color: #FFE6B6;
+    width: 100%;
+    transition: 0.3s;
   }
 
   .grid_container {
@@ -276,12 +335,30 @@ p.copyright {
     flex-direction: column;
     flex-wrap: wrap;
   }
+
   .footer_wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 15px 15px;
   }
 
+  .footer_text {
+    margin: 15px 15px;
+  }
+
+  h2.footer_title {
+    font-weight: 425;
+    text-align: center;
+  }
+
+  p.footer_greeting {
+    text-align: center;
+  }
+
+  .footer_buttons {
+    margin: 20px 20px;
+  }
   .footer_headshot {
     display: none;
   }

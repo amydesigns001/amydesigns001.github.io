@@ -222,6 +222,7 @@ p.copyright {
 
 @media (max-width: 390px) {
   .main_header {
+    margin: 20px 20px;
     display: flex;
   }
   .main_header_logo {
