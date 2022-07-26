@@ -337,9 +337,13 @@ p.copyright {
   }
   
   .hero_image {
+    background: url('Images/Header/photography.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
     background-position: bottom -50px right 0;
     border-radius: 15px;
     height: 175px;
+    width: auto;
   }
 
   .photo_container {
