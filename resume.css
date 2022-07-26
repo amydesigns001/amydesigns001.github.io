@@ -53,7 +53,7 @@ flex-wrap: wrap;
 gap: 45px;
 align-items: center;
 justify-content: center;
-padding: 20px 0;
+padding: 20px 0 40px 0;
 margin: 0;
 }
 
@@ -92,7 +92,7 @@ cursor: pointer;
 .hero_image {
   background: url('Images/Header/resume.jpg');
   background-repeat: no-repeat;
-  background-position: bottom -25px right 0;
+  background-position: top -150px right 0;
   background-size: cover;
   height: 200px;
   opacity: 100%;
@@ -249,11 +249,8 @@ h3.download_resume {
   color: #0B9308;
 }
 
-.resume_link:visited {
-  color: #0B9308;
-}
-
-.resume_link:active {
+a {
+  text-decoration: none;
   color: #0B9308;
 }
 
@@ -389,6 +386,10 @@ p.copyright {
     display: none;
   }
 
+  .main_header_right {
+    justify-self: end;
+  }
+
   .hamburger_parent {
     display: grid;
     grid-template-columns: 1fr;
@@ -461,10 +462,22 @@ p.copyright {
     animation: fade .5s;
   }
 
+  .hero_area {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  
+  .hero_image {
+    background-position: bottom -55px right 0;
+    border-radius: 15px;
+    height: 175px;
+  }
+
   .section_title_one, .section_title_two, .section_title_three
   {
     margin-bottom: 0;
   }
+
   .experience_grid, .education_grid, .skills_box {
     display: flex;
     flex-direction: column;

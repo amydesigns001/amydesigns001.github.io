@@ -290,6 +290,10 @@ p.copyright {
     display: none;
   }
 
+  .main_header_right {
+    justify-self: end;
+  }
+
   .hamburger_parent {
     display: grid;
     grid-template-columns: 1fr;

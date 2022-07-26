@@ -52,7 +52,7 @@ flex-wrap: wrap;
 gap: 45px;
 align-items: center;
 justify-content: center;
-padding: 20px 0;
+padding: 20px 0 40px 0;
 margin: 0;
 }
 
@@ -97,7 +97,7 @@ text-underline-offset: 0.5rem;
 .hero_image {
   background: url('Images/Header/writing.jpg');
   background-repeat: no-repeat;
-  background-position: bottom -430px right 0;
+  background-position: bottom -225px right 0;
   background-size: cover;
   height: 200px;
 }
@@ -265,6 +265,10 @@ p.copyright {
     display: none;
   }
 
+  .main_header_right {
+    justify-self: end;
+  }
+
   .hamburger_parent {
     display: grid;
     grid-template-columns: 1fr;
@@ -336,3 +340,62 @@ p.copyright {
     display: block;
     animation: fade .5s;
   }
+
+  .hero_area {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  
+  .hero_image {
+    background-position: bottom -50px right 0;
+    border-radius: 15px;
+    height: 175px;
+  }
+
+  .writing_container {
+    justify-content: center;
+    align-items: center;
+  }
+
+  img.img_writing {
+    width: 275px;
+    height: auto;
+    border-radius: 5px;
+  }
+
+  .footer_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 15px;
+  }
+
+  .footer_text {
+    margin: 15px 15px;
+  }
+
+  h2.footer_title {
+    font-weight: 425;
+    text-align: center;
+  }
+
+  p.footer_greeting {
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .footer_buttons {
+    margin: 20px 20px;
+    justify-content: center;
+  }
+
+  .footer_headshot {
+    display: none;
+  }
+  
+  p.copyright {
+    font-size: 14px;
+    padding-top: 0px;
+  }
+
+}
