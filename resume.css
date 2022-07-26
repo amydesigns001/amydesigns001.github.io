@@ -8,52 +8,53 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 h1.logo {
-font-size: 25px;
-font-family: Lexend;
+  font-size: 25px;
+  font-family: Lexend;
 }
 
 a {
-text-decoration: none;
+  text-decoration: none;
 }
 
 .main_header {
-display: grid;
-grid-template-columns: 1fr 1fr 1fr;
-grid-template-areas: 
-"left center right";
-margin: 40px 40px 30px 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 40px 40px 30px 30px;
 }
 
 .main_header_left {
-grid-area: left;
-justify-self: center;
-align-self: center;
+  grid-column: 1 / 2; 
 }
 
 .main_header_logo {
-grid-area: center;
-justify-self: center;
-align-self: center;
+  grid-column: 2 / 3;
+  justify-self: center;
+  align-self: center;
 }
 
-.main_header_links {
-grid-area: right;
-justify-self: end;
-align-self: center;
+.main_header_right {
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+  justify-self: center;
+  align-self: center;
 }
 
 .header_link {
-margin: 14px;
+  margin-left: 20px;
 }
+
+
 /* NAVBAR - Beginning */
 
 .navbar_flexbox {
 display: flex;
 flex-direction: row;
-gap: 30px;
+flex-wrap: wrap;
+gap: 45px;
 align-items: center;
 justify-content: center;
 padding: 20px 0;
+margin: 0;
 }
 
 ul {
@@ -63,8 +64,8 @@ padding: 0;
 
 .nav_item {
 font-family: lexend;
-font-size: 17px;
-font-weight: 300;
+font-size: 20px;
+font-weight: 350;
 }
 
 .nav_decoration[aria-current="page"] {
@@ -78,10 +79,6 @@ color: var(--text);
 cursor: pointer;
 }
 
-.nav_decoration[aria-current="page"] {
-text-decoration: underline wavy #f8c348 0.15rem;
-text-underline-offset: 0.5rem;
-}
 
 /* NAVBAR - End */
 
@@ -170,7 +167,7 @@ h3.work_place {
 
 .experience_grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 45% 55%;
   grid-template-rows: auto;
   grid-template-areas: "<left> | <right>";
 }
@@ -230,17 +227,34 @@ h2.edu_school {
 
 /* Download Resume */
 
-.download {
+.download_wrap {
   display: flex;
-  align-items: center;
   justify-content: center;
-  padding: 80px 50px;
+  align-items: center;
+  margin: 150px 0 150px 0;
+}
+
+.download_container {
+  border: #076805;
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 10px;
 }
 
 h3.download_resume {
   font-family: lexend;
   font-size: 24px;
-  font-weight: 325;
+  font-weight: 425;
+  margin: 13px;
+  color: #0B9308;
+}
+
+.resume_link:visited {
+  color: #0B9308;
+}
+
+.resume_link:active {
+  color: #0B9308;
 }
 
 /* Footer – Beginning */
@@ -255,18 +269,36 @@ h3.download_resume {
 
 .footer_content {
   display: flex;
+  align-items: center;
 }
 
-.footer_headshot, .footer_text {
-  margin: 40px 20px 30px 30px;
+.footer_text {
+  margin: 40px 30px 30px 30px;
 }
 
 .footer_headshot {
+  display: flex;
+  position: relative;
+  margin-left: 60px;
+  margin-right: 30px;
+  height: 300px;
+  width: 300px;
+}
+
+.headshot_frame {
   background-color: #FF8EDF;
+  border-radius: 16px;
   opacity: 22%;
   height: 300px;
   width: 300px;
+  position: absolute;
+}
+
+.headshot_img {
+  position: absolute; 
   border-radius: 16px;
+  top: 25px;
+  left: 25px;
 }
 
 .footer_text {
@@ -281,7 +313,7 @@ h2.footer_title {
   font-size: 21px;
   font-family: lexend;
   color: #4D504E;
-  font-weight: 375;
+  font-weight: 475;
 }
 
 p.footer_greeting {
@@ -335,34 +367,163 @@ p.copyright {
 
 /* Footer – End */
 
+
 @media (max-width: 390px) {
 
-  .main_header_logo {
-    display: flex;
-    flex-wrap: wrap;
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .main_header {
+    display: grid;
+    grid-template-columns: 0% 1fr 1fr;
+    margin: 30px 40px;
   }
 
   .main_header_left {
     display: none;
   }
 
-  .main_header_links {
+  .linkedin_github {
     display: none;
   }
 
-  .grid_container {
+  .hamburger_parent {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .nav_container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .navbar_flexbox {
+    flex-direction: column;
+    width: 300px;
+    display: none;
+    border-radius: 15px;
+    background-color: #DFE6FF;
+    padding: 8px 0 12px 0;
+    margin-bottom: 12px;
+    margin-top: 10px;
+  }
+
+  .nav_item {
+    font-size: 20px;
+    text-align: center;
+    font-weight: 400;
+    padding: 5px 0;
+  }
+  
+  .hamburger_icon {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    height: 2.75rem;
+    width: 2.75rem;
+    opacity: 100%;
+    background-color: black;
+    border-radius: 0.25em;
+  }
+
+  .burger_flex {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
   }
-  .footer_wrapper {
+
+  .line {
+    background-color: #84C9A8;
+    border-radius: 5px;
+    width: 40px;
+    height: 4px;
+  }
+  
+  .hamburger_icon.isactive .line:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger_icon.isactive .line:nth-child(1) {
+    transform: translateY(11px) rotate(45deg);
+  }
+  
+  .hamburger_icon.isactive .line:nth-child(3) {
+    transform: translateY(-11px) rotate(-45deg);
+  }
+  
+  .navbar_flexbox.active {
+    display: block;
+    animation: fade .5s;
+  }
+
+  .section_title_one, .section_title_two, .section_title_three
+  {
+    margin-bottom: 0;
+  }
+  .experience_grid, .education_grid, .skills_box {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
   }
 
+  .logo_column, .edu_logo_column, .skills_box {
+    padding: 50px 0 0 0;
+    margin: 0;
+  }
+
+  .work_column, .edu_name_column {
+    text-align: center;
+    padding: 15px 30px 15px 30px;
+    margin: 0;
+  }
+
+  .download_wrap {
+    margin: 75px 0 75px 0;
+  }
+
+  h2 {
+    font-size: 13px;
+  }
+
+  .footer_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 15px;
+  }
+
+  .footer_text {
+    margin: 15px 15px;
+  }
+
+  h2.footer_title {
+    font-weight: 425;
+    text-align: center;
+  }
+
+  p.footer_greeting {
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .footer_buttons {
+    margin: 20px 20px;
+    justify-content: center;
+  }
   .footer_headshot {
     display: none;
   }
+  
+  p.copyright {
+    font-size: 14px;
+    padding-top: 0px;
+  }
+
   
 }
