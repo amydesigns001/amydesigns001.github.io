@@ -95,7 +95,7 @@ text-underline-offset: 0.5rem;
 }
 
 .hero_image {
-  background: url('Images/Header/writing.jpg');
+  background: url('/Images/header/writing.jpg');
   background-repeat: no-repeat;
   background-position: bottom -225px right 0;
   background-size: cover;
@@ -347,7 +347,7 @@ p.copyright {
   }
   
   .hero_image {
-    background: url('Images/Header/writing.jpg');
+    background: url('/Images/header/writing.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom -50px right 0;
