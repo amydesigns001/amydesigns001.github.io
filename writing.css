@@ -149,7 +149,12 @@ img.img_writing {
 }
 
 .footer_text {
-  margin: 40px 30px 30px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 0px;
+  flex: 1;
+  margin: 40px 30px 30px 30px;  
 }
 
 .footer_headshot {
@@ -177,13 +182,6 @@ img.img_writing {
   left: 25px;
 }
 
-.footer_text {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-bottom: 0px;
-  flex: 1;
-}
 
 h2.footer_title {
   font-size: 21px;
@@ -198,6 +196,7 @@ p.footer_greeting {
   text-align: left;
   font-weight: 275;
   line-height: 135%;
+  letter-spacing: 0.05em;
 }
 
 .footer_buttons {

@@ -319,6 +319,7 @@ p.footer_greeting {
   text-align: left;
   font-weight: 275;
   line-height: 135%;
+  letter-spacing: 0.05em;
 }
 
 .footer_buttons {

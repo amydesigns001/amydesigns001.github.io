@@ -198,6 +198,11 @@ textarea {
 
 .footer_text {
   margin: 40px 30px 30px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 0px;
+  flex: 1;
 }
 
 .footer_headshot {
@@ -225,14 +230,6 @@ textarea {
   left: 25px;
 }
 
-.footer_text {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-bottom: 0px;
-  flex: 1;
-}
-
 h2.footer_title {
   font-size: 21px;
   font-family: lexend;
@@ -246,6 +243,7 @@ p.footer_greeting {
   text-align: left;
   font-weight: 275;
   line-height: 135%;
+  letter-spacing: 0.05em;
 }
 
 .footer_buttons {
