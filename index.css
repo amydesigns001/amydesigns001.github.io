@@ -85,94 +85,52 @@ cursor: pointer;
 /* MAIN CONTENT – START */
 
 .rover_redesign_container {
-  width: auto;
-  height: 1000px;
-}
-
-h1.rover {
-  position: absolute;
-  width: 427.49px;
-  height: 135px;
-  left: 75px;
-  top: 220px;
-
-  font-family: 'DM Sans';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 90px;
-  line-height: 149px;
-
-  color: #373737;
-}
-
-.rover_btn {
-  position: absolute;
-  width: 215px;
-  height: 45px;
-  left: 75px;
-  top: 375px;
-
-  background: #727272;
-  border-radius: 5px;
-}
-
-.rover_btn_text {
-  position: absolute;
-  width: 199px;
-  height: 52px;
-  left: 9px;
-  top: 5px;
-
-  font-family: 'DM Sans';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 25px;
-  line-height: 39px;
-  text-align: center;
-
-  color: white;
-}
-
-p.rover_text {
-  position: absolute;
-  width: 450px;
-  height: 120px;
-  left: 630px;
-  top: 707px;
-
-  font-family: 'DM Sans';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 25px;
-
-  color: #000000;
-}
-
-h1.redesign {
-  position: absolute;
-  width: 695.44px;
-  height: 135px;
-  left: 625px;
-  top: 558px;
-  
-  font-family: 'DM Sans';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 90px;
-  line-height: 149px;
-  
-  color: #373737;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
 }
 
 img.rover_home {
-  width: 400px;
+  width: 375px;
   height: auto;
-  position: absolute;
-  left: 275px;
-  top: 304.66px;
-
   transform: rotate(-8.21deg);
+} 
+
+.img_container {
+}
+
+.rover_title {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  width: auto;
+  height: 300px;
+}
+
+h1.rover {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+
+  color: #373737;
+}
+
+.rover_text {
+  font-family: 'DM Sans';
+  margin: 15px 0px;
+}
+
+.rover_btn {
+  background-color: #4D504E;
+  font-family: 'DM Sans';
+  color: white;
+  padding: 10px;
+  border-radius: 3px;
+  margin-top: 10px;
 }
 
 
@@ -381,6 +339,37 @@ p.copyright {
   .navbar_flexbox.active {
     display: block;
     animation: fade .5s;
+  }
+
+  .rover_redesign_container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  img.rover_home {
+    width: 250px;
+    height: auto;
+  }
+
+  .rover_title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 12px 0;
+    width: 90%;
+    height: auto;
+  }
+
+  h1.rover {
+    font-size: 40px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
   }
 
   .footer_wrapper {
