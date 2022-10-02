@@ -112,6 +112,16 @@ h1.hero_text {
   text-shadow: 1px 1px 1px #767679;
 }
 
+.section_title_zero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 55px;
+  background-color: #95AD96;
+  opacity: 64%;
+  margin: 40px 0px;
+}
+
 .section_title_one {
   display: flex;
   align-items: center;
