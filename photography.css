@@ -126,111 +126,11 @@ h1.hero_text {
 
 /* Footer – Beginning */
 
-.footer_wrapper {
-  margin: 40px 40px;
-  border-radius: 13px;
-  display: flex;
-  flex-direction: column;
-  border: 3px solid #A1B4F8;
-}
-
-.footer_content {
-  display: flex;
-  align-items: center;
-}
-
-.footer_text {
-  margin: 40px 30px 30px 30px;
-}
-
-.footer_headshot {
-  display: flex;
-  position: relative;
-  margin-left: 60px;
-  margin-right: 30px;
-  height: 300px;
-  width: 300px;
-}
-
-.headshot_frame {
-  background-color: #FF8EDF;
-  border-radius: 16px;
-  opacity: 22%;
-  height: 300px;
-  width: 300px;
-  position: absolute;
-}
-
-.headshot_img {
-  position: absolute; 
-  border-radius: 16px;
-  top: 25px;
-  left: 25px;
-}
-
-.footer_text {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-bottom: 0px;
-  flex: 1;
-}
-
-h2.footer_title {
-  font-size: 21px;
+.footer_copyright {
   font-family: lexend;
-  color: #4D504E;
-  font-weight: 475;
-}
-
-p.footer_greeting {
-  font-family: lexend;
-  font-size: 18px;
-  text-align: left;
-  font-weight: 275;
-  line-height: 135%;
-  letter-spacing: 0.05em;
-}
-
-.footer_buttons {
-  display: flex;
-  gap: 30px;
-  margin: 30px 0px;
-  font-size: 18px;
-  font-family: Lexend;
-  align-items: center;
-}
-
-a.footer_button_one {
-  color: black;
-  background-color: white;
-  padding: 12px;
-  border-radius: 9px;
-  text-align: center;
-  border: 2.7px solid;
-}
-
-a.footer_button_two {
-  color: black;
-  background-color: white;
-  padding: 12px;
-  border-radius: 9px;
-  text-align: center;
-  border: 2.7px solid #84C9A8;
-}
-
-.footer_button {
-  background-color: white;
-  border-radius: 13px;
-  padding: 11px;
-}
-
-p.copyright {
-  padding: 20px;
-  font-family: 'Inria Serif', serif;
-  text-align: center;
-  width: 100%;
   font-weight: 200;
+  text-align: center;
+  padding: 20px
 }
 
 /* Footer – End */
@@ -361,38 +261,11 @@ p.copyright {
     border-radius: 9px;
   }
 
-  .footer_wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 15px 15px;
-  }
-
-  .footer_text {
-    margin: 15px 15px;
-  }
-
-  h2.footer_title {
-    font-weight: 425;
+  .footer_copyright {
+    padding: 15px;
     text-align: center;
-  }
-
-  p.footer_greeting {
-    text-align: center;
-    font-size: 15px;
-  }
-
-  .footer_buttons {
-    margin: 20px 20px;
-    justify-content: center;
-  }
-  .footer_headshot {
-    display: none;
-  }
-  
-  p.copyright {
-    font-size: 14px;
-    padding-top: 0px;
+    font-family: 'lexend';
+    font-weight: 200;
   }
 
 }

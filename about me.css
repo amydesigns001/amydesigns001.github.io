@@ -114,181 +114,31 @@ h1.hero_text {
 /* HERO BANNER  – End */
 
 /* MAIN CONTENT – Start */
-
-.contact_wrapper {
+.about_me_content {
   display: flex;
-  position: relative;
+  flex-direction: row;
+  align-items: flex-start;
   justify-content: center;
-  align-items: center;
-  padding: 40px 50px 40px 50px;
-  box-sizing: border-box;
-  font-family: lexend;
-  /* height: 100vh;
-  width: 100% */
+  margin-top: 50px;
 }
 
-.content_grid {
-  max-width: 650px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background-color: #fff;
-  box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
+.img_about_me {
+  border-radius: 12px;
+  margin-right: 40px;
 }
 
-.contact_main_content {
-	padding: 25px 40px;
-  max-width: 550px;
-}
-
-h2 {
-	position: relative;
-	padding: 0 0 10px;
-	margin-bottom: 10px;
-}
-
-.field {
-	width: 500px;
-	border: 2px solid rgba(0, 0, 0, 0);
-	outline: none;
-	background-color: rgba(230, 230, 230, 0.6);
-	padding: 0.5rem 1rem;
-	font-size: 1.1rem;
-	margin-bottom: 22px;
-	transition: .3s;
+.text_about_me {
+  width: 500px;
+  height: 500px;
   font-family: lexend;
 }
 
-textarea {
-	min-height: 150px;
+.footer_copyright {
   font-family: lexend;
-}
-
-.button {
-	width: 540px;
-	background-color: #2ecc71;
-  padding-top: 10px;
-  padding-bottom: 10px;
-	color: #fff;
-	font-size: 1.1rem;
-	border: none;
-	outline: none;
-	cursor: pointer;
-	transition: .3s;
-}
-
-/* Contact Container – End */
-
-/* Footer – Beginning */
-
-.footer_wrapper {
-  margin: 40px 40px;
-  border-radius: 13px;
-  display: flex;
-  flex-direction: column;
-  border: 3px solid #A1B4F8;
-}
-
-.footer_content {
-  display: flex;
-  align-items: center;
-}
-
-.footer_text {
-  margin: 40px 30px 30px 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-bottom: 0px;
-  flex: 1;
-}
-
-.footer_headshot {
-  display: flex;
-  position: relative;
-  margin-left: 60px;
-  margin-right: 30px;
-  height: 300px;
-  width: 300px;
-}
-
-.headshot_frame {
-  background-color: #FF8EDF;
-  border-radius: 16px;
-  opacity: 22%;
-  height: 300px;
-  width: 300px;
-  position: absolute;
-}
-
-.headshot_img {
-  position: absolute; 
-  border-radius: 16px;
-  top: 25px;
-  left: 25px;
-}
-
-h2.footer_title {
-  font-size: 21px;
-  font-family: lexend;
-  color: #4D504E;
-  font-weight: 475;
-}
-
-p.footer_greeting {
-  font-family: lexend;
-  font-size: 18px;
-  text-align: left;
-  font-weight: 275;
-  line-height: 135%;
-  letter-spacing: 0.05em;
-}
-
-.footer_buttons {
-  display: flex;
-  gap: 30px;
-  margin: 30px 0px;
-  font-size: 18px;
-  font-family: Lexend;
-  align-items: center;
-}
-
-a.footer_button_one {
-  color: black;
-  background-color: white;
-  padding: 12px;
-  border-radius: 9px;
-  text-align: center;
-  border: 2.7px solid;
-}
-
-a.footer_button_two {
-  color: black;
-  background-color: white;
-  padding: 12px;
-  border-radius: 9px;
-  text-align: center;
-  border: 2.7px solid #84C9A8;
-}
-
-.footer_button {
-  background-color: white;
-  border-radius: 13px;
-  padding: 11px;
-}
-
-p.copyright {
-  padding: 20px;
-  font-family: 'Inria Serif', serif;
-  text-align: center;
-  width: 100%;
   font-weight: 200;
+  text-align: center;
+  padding: 20px
 }
-
-/* Footer – End */
-
 
 @media (max-width: 415px) {
 
@@ -397,67 +247,28 @@ p.copyright {
     height: 175px;
   }
 
-  .contact_wrapper {
-    padding: 20px 0 0 0;
+  .about_me_content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .img_about_me {
     margin: 0;
   }
 
-  .contact_grid {
-    max-width: 300px;
+  .text_about_me {
+    width: auto;
+    height: auto;
+    padding-top: 15px;
+    margin: 15px;
+    padding: 15px;
   }
 
-  .contact_main_content {
-    max-width: 300px;
-    padding: 0;
-    margin: 15px 0;
-  }
-
-  .field {
-    width: 250px;
-  }
-
-  .button {
-    width: 285px;
-  }
-
-  .grid_container {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
-
-  .footer_wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 15px 15px;
-  }
-
-  .footer_text {
-    margin: 15px 15px;
-  }
-
-  h2.footer_title {
-    font-weight: 425;
+  .footer_copyright {
+    padding: 15px;
     text-align: center;
+    font-family: 'lexend';
+    font-weight: 200;
   }
-
-  p.footer_greeting {
-    text-align: center;
-    font-size: 15px;
-  }
-
-  .footer_buttons {
-    margin: 20px 20px;
-    justify-content: center;
-  }
-  .footer_headshot {
-    display: none;
-  }
-  
-  p.copyright {
-    font-size: 14px;
-    padding-top: 0px;
-  }
-
 }
