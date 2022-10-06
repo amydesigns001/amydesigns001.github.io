@@ -191,6 +191,33 @@ p.case_study_body {
   flex-direction: column;
 }
 
+
+.brief_container {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  font-family: 'Barlow';
+}
+
+.brief_title {
+  width: 100%;
+  font-size: 26px;
+  text-align: center;
+}
+
+.janesgarden_title_container {
+  display: flex;
+  align-items: flex-start;
+  font-family: 'Barlow';
+}
+
+.janes_garden_heading {
+  margin-top: 60px;
+}
+
+h3.janes_garden_h {
+  font-weight: 300;
+}
+
   /* Footer – Beginning */
 
   .footer_copyright {
