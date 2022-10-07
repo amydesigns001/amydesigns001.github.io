@@ -201,7 +201,11 @@ p.case_study_body {
 .brief_title {
   width: 100%;
   font-size: 26px;
-  text-align: center;
+  text-align: left;
+}
+
+p.brief_body {
+  font-size: 18px;
 }
 
 .janesgarden_title_container {
@@ -216,6 +220,7 @@ p.case_study_body {
 
 h3.janes_garden_h {
   font-weight: 300;
+  font-family: 'Lexend';
 }
 
   /* Footer – Beginning */
