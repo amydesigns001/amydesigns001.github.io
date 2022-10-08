@@ -184,11 +184,11 @@ p.case_study_body {
 }
 
 .ecomm_img_container {
-  padding-top: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 
@@ -205,7 +205,22 @@ p.case_study_body {
 }
 
 p.brief_body {
-  font-size: 18px;
+  font-size: 20px;
+  font-family: 'Barlow';
+}
+
+.intro_text {
+  font-size: 20px;
+  font-weight: 300;
+  font-family: 'Barlow';
+  letter-spacing: 0.02rem;
+  padding-top: 100px;
+  width: 350px;
+}
+
+.confirmation_img {
+  width: 300px;
+  height: auto;
 }
 
 .janesgarden_title_container {
@@ -218,12 +233,21 @@ p.brief_body {
   margin-top: 60px;
 }
 
-h3.janes_garden_h {
-  font-weight: 300;
-  font-family: 'Lexend';
+.intro_container {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
 }
 
-  /* Footer – Beginning */
+.intro_img {
+  width: 240px;
+  height: auto;
+  padding: 20px;
+}
+
+
+
+/* Footer – Beginning */
 
   .footer_copyright {
     font-family: lexend;
@@ -232,7 +256,7 @@ h3.janes_garden_h {
     padding: 20px
   }
   
-  /* Footer – End */
+/* Footer – End */
   
   
   @media (max-width: 415px) {
@@ -366,6 +390,27 @@ h3.janes_garden_h {
     }
   
     .grid_container {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+
+    .intro_container {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+
+    .brief_body {
+      padding-top: 20px;
+    }
+
+    .intro_text {
+      padding: 0;
+      width: 80%;
+    }
+
+    .brief_container {
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;

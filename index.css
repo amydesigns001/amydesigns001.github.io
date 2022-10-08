@@ -111,47 +111,49 @@ h2.statement {
   font-size: 23px;
 }
 
-img.rover_home {
-  width: 375px;
-  height: auto;
-  transform: rotate(-8.21deg);
-} 
-
-.img_container {
-}
-
-.rover_title {
+.case_study_display {
   display: flex;
-  align-items: flex-start;
   justify-content: center;
-  flex-direction: column;
-  width: auto;
+  padding: 20px;
+}
+
+.case_study_display_img {
+  width: 300px;
+  height: 200px;
+}
+
+h3.case_study_display_title {
+  font-family: 'Barlow';
+  font-size: 20px;
+  text-align: center;
+}
+
+p.case_study_display_description {
+  font-family: 'Barlow';
+  font-size: 16px;
+}
+
+.case_study_display_link {
+  color: black;
+}
+
+.case_study_display_one {
+  width: 300px;
   height: 300px;
-}
-
-h1.rover {
-  font-family: 'DM Sans';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 50px;
-
-  color: #373737;
-}
-
-.rover_text {
-  font-family: 'DM Sans';
-  margin: 15px 0px;
-}
-
-.rover_btn {
-  background-color: #4D504E;
-  font-family: 'DM Sans';
-  color: white;
   padding: 10px;
-  border-radius: 3px;
-  margin-top: 10px;
 }
 
+.case_study_display_two {
+  width: 300px;
+  height: 300px;
+  padding: 10px;
+}
+
+.case_study_display_three {
+  width: 300px;
+  height: 300px;
+  padding: 10px;
+}
 
 /* Footer – Beginning */
 
@@ -299,6 +301,10 @@ h1.rover {
     font-size: 30px;
   }
 
+  .case_study_display {
+    display: flex;
+    flex-direction: column;
+  }
   .footer_copyright {
     padding: 15px;
     text-align: center;
