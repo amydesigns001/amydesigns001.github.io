@@ -96,41 +96,54 @@ cursor: pointer;
 
 .artist_container {
   width: 600px;
-  font-family: 'Inria-Serif', serif;
+  font-family: 'lexend';
 }
 
 
 h1.artist_heading {
-  font-family: 'Noto Serif KR', serif;
+  font-family: 'lexend';
   font-size: 32px;
+  font-weight: 450;
 }
 
 h2.statement {
-  font-family: 'Noto Serif KR', serif;
+  font-family: 'lexend';
   font-weight: 250;
   font-size: 23px;
 }
 
 .case_study_display {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   padding: 20px;
 }
 
 .case_study_display_img {
-  width: 300px;
-  height: 200px;
+  width: 950px;
+  height: 450px;
+}
+
+.case_study_text {
+  display: flex;
+  flex-direction: row;
+  padding-top: 30px;
 }
 
 h3.case_study_display_title {
-  font-family: 'Barlow';
+  font-family: 'lexend';
   font-size: 20px;
-  text-align: center;
+  font-weight: 400;
+  text-align: Left;
+  padding-right: 80px;
 }
 
 p.case_study_display_description {
-  font-family: 'Barlow';
-  font-size: 16px;
+  font-family: 'lexend';
+  font-size: 20px;
+  font-weight: 300;
+  text-align: left;
 }
 
 .case_study_display_link {
@@ -138,20 +151,20 @@ p.case_study_display_description {
 }
 
 .case_study_display_one {
-  width: 300px;
-  height: 300px;
+  width: 950px;
+  height: 700px;
   padding: 10px;
 }
 
 .case_study_display_two {
-  width: 300px;
-  height: 300px;
+  width: 950px;
+  height: 700px;
   padding: 10px;
 }
 
 .case_study_display_three {
-  width: 300px;
-  height: 300px;
+  width: 950px;
+  height: 700px;
   padding: 10px;
 }
 

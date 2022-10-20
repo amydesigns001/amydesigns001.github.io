@@ -105,8 +105,9 @@ body {
 }
 
 .ullist {
-  font-family: 'barlow';
+  font-family: 'Lexend';
   font-size: 20px;
+  font-weight: 350;
 }
 
 .tab {
@@ -134,14 +135,14 @@ body {
 }
 
 .case_study_title {
-  font-family: 'Barlow';
-  font-size: 36px;
-  font-weight: 700;
+  font-family: 'Lexend';
+  font-size: 34px;
+  font-weight: 400;
   text-align: center;
 }
 
 p.case_study_body {
-  font-family: 'Barlow';
+  font-family: 'Lexend';
   font-size: 18px;
   font-weight: 300;
 }
@@ -161,7 +162,7 @@ p.case_study_body {
 }
 
 .booking_card_body {
-  font-family: 'Barlow';
+  font-family: 'Lexend';
   font-size: 18px;
   font-weight: 300;
   line-height: 150%;
@@ -195,7 +196,7 @@ p.case_study_body {
 .brief_container {
   display: grid;
   grid-template-columns: 30% 70%;
-  font-family: 'Barlow';
+  font-family: 'Lexend';
 }
 
 .brief_title {
@@ -206,13 +207,13 @@ p.case_study_body {
 
 p.brief_body {
   font-size: 20px;
-  font-family: 'Barlow';
+  font-family: 'Lexend';
 }
 
 .intro_text {
   font-size: 20px;
   font-weight: 300;
-  font-family: 'Barlow';
+  font-family: 'Lexend';
   letter-spacing: 0.02rem;
   padding-top: 100px;
   width: 350px;
@@ -226,7 +227,7 @@ p.brief_body {
 .janesgarden_title_container {
   display: flex;
   align-items: flex-start;
-  font-family: 'Barlow';
+  font-family: 'Lexend';
 }
 
 .janes_garden_heading {
