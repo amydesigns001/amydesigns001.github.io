@@ -129,6 +129,11 @@ body {
 
 /* IN-PAGE NAVBAR – End */
 
+.case_study_container {
+  width: 900px;
+  height: auto;
+  margin: auto;
+}
 
 .case_studies_main_div{
   margin: 50px 200px;
@@ -136,7 +141,7 @@ body {
 
 .case_study_title {
   font-family: 'Lexend';
-  font-size: 34px;
+  font-size: 30px;
   font-weight: 400;
   text-align: center;
 }
@@ -203,10 +208,12 @@ p.case_study_body {
   width: 100%;
   font-size: 26px;
   text-align: left;
+  font-weight: 300;
 }
 
 p.brief_body {
   font-size: 20px;
+  font-weight: 275;
   font-family: 'Lexend';
 }
 
