@@ -27,6 +27,14 @@
 <body>
     <header class="main_header">
         <div class="main_header_left">
+            <div class="nav_container">
+                <ul class="navbar_flexbox" id="menu">
+                    <li class="nav_item">
+                        <a href="/case_studies.html" class="nav_decoration btn">WORK</a></li>
+                    <li class="nav_item">
+                        <a href="/about me.html" class="nav_decoration btn">ABOUT ME</a></li>
+                </ul>
+            </div>
         </div>
         <div class="main_header_logo">
             <h1 class="logo">
@@ -34,8 +42,8 @@
         </div>
         <div class="main_header_right">
             <div class="linkedin_github">
-                <a class="header_link" href="https://www.linkedin.com/in/amy-carms/"><img src=Images/linkedin.png width="40px" height="40px"></a>
-                <a class="header_link" href="https://github.com/amydesigns001/amydesigns001.github.io"><img src=Images/github.png width="40px" height="40px"></a>
+                <a class="header_link" href="https://www.linkedin.com/in/amy-carms/"><img src=Images/linkedin.png width="30px" height="30px"></a>
+                <a class="header_link" href="https://github.com/amydesigns001/amydesigns001.github.io"><img src=Images/github.png width="30px" height="30px"></a>
             </div>
             <div class="hamburger_parent grid_child">
                 <div class="hamburger_icon burger_flex">
@@ -46,187 +54,41 @@
             </div>
         </div>
     </header>
-
-    <div class="nav_container">
-        <ul class="navbar_flexbox" id="menu">
-            <li class="nav_item">
-                <a href="/index.html" class="nav_decoration btn">HOME</a></li>
-            <li class="nav_item">
-                <a href="/about me.html" class="nav_decoration btn">ABOUT ME</a></li>
-            <li class="nav_item">
-                <a href="/case_studies.html" class="nav_decoration btn">WORK</a></li>
-            <li class="nav_item">
-                <a href="/photography.html" class="nav_decoration btn">PHOTOGRAPHY</a></li>
-        </ul>
-    </div>
-
-
-    <ul class="tabs">
-        <li data-tab-target="#roversection" class="active tab ullist">Rover</li>
-        <li data-tab-target="#janesgarden" class="tab ullist">Jane's Garden</li>
-        <li data-tab-target="#ecommercesection" class="tab ullist">DesignMe</li>
-    </ul>
-
-    <div class="tab-content">
-        <div id="roversection" data-tab-content class="active">
-            <h1 class="case_study_title">ROVER RE-DESIGN</h1><br><br>
-                <div class="brief_container">
-                    <h3 class="brief_title">BRIEF</h3>
-                    <p class="brief_body">For this project, my goal was to organize booking information into one, central location so that it is easily accessible. I also sought to make booking cards more descriptive and efficient. This way, users don’t have to go through the same pathways to access individual bits of information.</p>
-                </div>
-                <br>
-                <div class="brief_container">
-                    <h3 class="brief_title">USER</h3>
-                    <p class="brief_body">A busy & ambitious pet sitter that wants to stay organized</p>
-                </div>
-                <br>
-                <div class="brief_container">
-                    <h3 class="brief_title">STRATEGY</h3>
-                    <p class="brief_body">Maintain Rover’s brand and increase effeciency of existing app components.</p>
-                </div>
-            
-            <img class="case_study_img" src="/Images/Rover/Home.png">
-
-            <div class="brief_container">
-                <h3 class="brief_title">INTRODUCTION</h3>
-                <p class="brief_body">I’ve been using Rover as a dog sitter for over four months now and have boarded 11 different dogs. The app is “the nation’s largest pet sitting and walking network.” Through Rover, pet owners can book available sitters in their area.<br> <br>The first thing I did was create a profile. Your sitter profile contains a detailed account of your experience, your day-to-day schedule, what you would like to know about prospective clients, your pricing and last, but not least, reviews. Together, this information acts as both your resume and your selling card. I find to be an effective, competitive system for both pet owners and sitters. Pet owners want to book the best available, and pet sitters can adjust their pricing based on demand.<br><br>While using the app, I noticed several repetitive functions and several that could be introduced to create a more streamlined experience for boarders. </p><br>
-            </div>
-            <br>
-            <br>
-
-            <div class="brief_container">
-                <h3 class="brief_title">THE BOOKING PROCESS</h3>
-                <p class="brief_body">The first step to understanding user activity is to understand the booking process.</p>
-            </div>
-
-            <img class="case_study_img" src="/Images/Rover/The Booking Process.png">
-            
-            <div class="brief_container">
-                <h1 class="brief_title">BOOKING CARDS</h1>
-                <p class="brief_body">A booking card is where a sitter goes for all relevant information for pending, ongoing, upcoming and past bookings. It displays a profile picture of the client, the client’s name, the time of last correspondance, the client’s boarding dates, a preview of the last message and the booking status. When you click on a booking card, it leads to even further information about the booking: the message between sitter and client, payment details, exact drop-off and pick-up dates and times and the client’s care info.<br>
-                    <br>The key change in this new iteration is adding a status tag to all bookings. Rover already uses a form of status tags but only for pending bookings. I introduced three new status tags: Upcoming, Happening Now and Archived. This new organizational system eliminates the need to separate pending and upcoming bookings into two separate pages–as it is set up now–and sitters can view all current bookings in one, fluid page.</p>
-            </div>
-
-            <img class="case_study_img booking_card" src="/Images/Rover/booking_card.png">
-            <p class="brief_body">I did, however, keep a separation between current and past bookings via a button. The button allows users to toggle between the two lists.</p>
-            <img class="case_study_img booking_status_card" src="/Images/Rover/Booking Tags.png">
-            
-            <img class="case_study_img past_current_bookings" src="/Images/Rover/current_past_bookings.png">
-            <p class="brief_body">Now that all past bookings are in one place, and maintaining the philosophy that all booking cards lead to the same place, I can eliminate the “Rebook” tab and nest “Notifications” in its place.</p>
     
-            <img class="case_study_img" src="/Images/Rover/Notifications.png">
-
-            <div class="brief_container">
-                <h3 class="brief_title"><br>NOTIFICATIONS</h3>
-                <p class="brief_body">I've been using Rover for over 4 months now, and I have yet to receive a notification. It’s unclear why new messages, new boarding requests, booking confirmations, booking modifications and etc don’t appear in the notifications page. It’s high time they do!<br>
-                <br>A “Notifications” page creates a hub where information is organized by the time it comes in, in contrast to booking cards, which are organized by a variety of booking information.<br>
-                <br>This way, sitters can look through their notifications and ensure they haven’t missed any activity and they have a reminder to respond to any outstanding messages.</p>
+    <div class="case_study_display">
+        <div class="case_study_display_one">
+            <div>
+                <a class="case_study_display_link" href="rover.html">
+                <img class="case_study_display_img" src="/Images/index_grid/3.png">
             </div>
-
-                <h1 class="case_study_title"><br>Extracurricular: Drag-triggered message response</h1>
-                <img class="case_study_img" src="/Images/Rover/Message Drag.gif">
-                <h1 class="case_study_title"><br>Extracurricular: Daily-view calendar</h1>
-                <img class="case_study_img" src="/Images/Rover/Calendar (Weekly).png">
-            
-            <div class="brief_container">
-                <h3 class="brief_title">CONCLUSION</h3>
-                <p class="brief_body">Above all, this was a highly informative exercise. Challenging myself with a product re-design meant that I first had to study the intention of the base design. Understanding why each component exists, why it was placed where it is, what app functionality looks like and so on and so forth, drove the re-design. The base design dictated what adjustments were feasible. I am now a more educated and dedicated user!</p>
-            </div>
-
-        </div>
-
-        <div id="ecommercesection" data-tab-content>
-            <h1 class="case_study_title">DESIGNME</h1>
-            <br><br>
-            <div class="brief_container">
-                <h3 class="brief_title">INTRO</h3>
-                <p class="brief_body">MyHome was a project that I took part of while I was completing my Google UX Design certification. The idea was to design an app through which users can catalogue and purchase furniture.</p>
-            </div>
-
-            <div class="intro_container">
-                <img class="intro_img" src="/Images/EcomWireframe/MyHome Mockup.png">
-                <h3 class="intro_text"><b>Project Duration:</b> 1 week, August 2022<br><b>My Role:</b> Product Designer<br><b>Key Skills:</b> Concept Ideation, Interaction Design, Visual Design, Prototyping<br></h3>
-            </div>
-
-            <div class="brief_container">
-                <h3 class="brief_title">THE USER</h3>
-                <p class="brief_body">MyHome’s anticipated users are older, more financially stable consumers that are mildly technologically fluent.<br>These users spend a weekly average of 17-20 hours on their phone. They use their phone for predominantly functional purposes, as opposed to leisure. These users want access to the latest furniture and corresponding prices. They are willing to invest time into downloading an app and learning how to use it.</p>
-            </div>
-            <br><br>
-            <div class="brief_container">
-                <h3 class="brief_title">PROBLEM STATEMENT</h3>
-                <p class="brief_body">Jill is a project manager that works from her Brooklyn brownstone apartment. Since she spends most of her time at home, she wants to use some time and money to re-decorate her home office. She frequently sees ads for furniture while she is scrolling through her phone, but she is easily overwhelmed by the thousands and thousands of options. She wants an app where she can look through a more curated selection of furniture.</p>
-            </div>
-
-            <div class="ecomm_img_container">
-                <img class="ecomm_img" src="/Images/EcomWireframe/MyHome Homepage.png">
-                <img class="ecomm_img" src="/Images/EcomWireframe/MyHome Product Details.png">
-                <img class="ecomm_img" src="/Images/EcomWireframe/MyHome Checkout.png"
-                <img class="ecomm_img" src="/Images/EcomWireframe/MyHome Confirmation A.png">
-            </div>
-
-            <div class="brief_container">
-                <h3 class="brief_title">NEXT STEPS</h3>
-                <p class="brief_body">Add an AR feature through which users can more accurately see what certain pieces will look like in their homes.</p>
-            </div>
-
-            <div class="ecomm_img_container">
-            <img class="confirmation_img" src="/Images/EcomWireframe/MyHome Confirmation A.png">
+            <div class="case_study_text">
+                <h3 class="case_study_display_title">ROVER</h3>
+                <p class="case_study_display_description">Scheduling optimization for more sitter engagement</p></a>
+                <p class="case_study_arrow">View case study →</p>
             </div>
         </div>
 
-        <div id="janesgarden" data-tab-content>
-            <h1 class="case_study_title">JANE'S GARDEN</h1>
-            <br><br>
-            <div class="ecomm_img_container">
-
-                <div class="brief_container">
-                    <h3 class="brief_title">INTRO</h3>
-                    <p class="brief_body">Jane, a local business owner of a plant shop that I frequent, came to me with an app idea. She has quite a few regular customers that visit her shop to grow (pun very much intended) their indoor plant collection.<br><br>Jane noticed that many of her customers returned to her shop after making a purchase to ask her questions about caring for their new plant. Many of her customers are first-time owners with little to no experience caring for a plant, and they are nervous and have a lot of questions!<br><br>                
-                        Jane’s innovative idea for an app would, of course, incorporate her storefront and be a place where people can purchase plants. It would also serve as a resource for new and old plant owners alike to reference care guides for the plants they own. This way, customers would feel more confident in their purchases, and it would encourage more purchases.
-                        </p>
-                </div>
-
-                <div class="intro_container">
-                    <img class="intro_img" src="/Images/Jane's Garden/Home Mockup.png">
-                    <h3 class="intro_text"><b>Project Duration:</b> 1 week, August 2022<br><b>My Role:</b> Product Designer<br><b>Key Skills:</b> Concept Ideation, Interaction Design, Visual Design, Prototyping<br></h3>
-                </div>
-                <br>
-                <img class="ecomm_img" src="/Images/Jane's Garden/Succulents.png">
-                
-                <div class="brief_container">
-                    <h3 class="brief_title">THE USER</h3>
-                    <p class="brief_body">Without having the budget to conduct any of my own research for this project, I had to creatively source information about projected users. To start, I went to the source: Jane. As the owner of a succulent shop for more than 10 years, Jane shared a lot of valuable insights about the type of consumers she encountered.<br>
-                        <br>Although the in-person consumers Jane interacted with at her store would not be an exact projection of user of the app, it was a good place to start. Additionally, Jane’s physical customers would be the first group that this app would be marketed towards.<br>
-                        <br>Jane’s customers were anywhere from 18-40. She noticed that they are usually single adults, or adults that live by themselves. They are individuals that have more time to spend caring and learning about plants.</p>
-                </div>
-            
-                <br>
-                <div class="brief_container">
-                    <h3 class="brief_title">PROBLEM STATEMENT</h3>
-                    <p class="brief_body">Ricky is a marketing strategist in NYC that works from home. While he isn’t quite ready to commit to getting a cat or a dog, he thinks a succulent will be a great starting point. He walks by a plant store every week, on his way to the grocery store, but hasn’t walked in yet, because he doesn’t know the first thing about plants.
-                        </p>
-                </div>
-                <br>
-                <div class="brief_container">
-                    <h3 class="brief_title">GOING FORWARD</h3>
-                    <p class="brief_body">This app will benefit from a wide usability study, in order to gauge a broader range of users. It would be interesting to see how frequently users will return to the app after initially reading care guides.</p>
-                </div>
-                <br>
-                <div class="brief_container">
-                    <h3 class="brief_title">NEXT STEPS</h3>
-                    <p class="brief_body">Add more plant selections and accompanying care guides. Allow users to create their own accounts for ease of access to their bookmarked plants.</p>
-                </div>
-                <br>
-                <img class="ecomm_img" src="/Images/Jane's Garden/Bundles.png">
-                <img class="ecomm_img" src="/Images/Jane's Garden/Cool Girl.png">
-                <img class="ecomm_img" src="/Images/Jane's Garden/Your Bag.png">
+        <div class="case_study_display_two">
+            <div>
+                <a class="case_study_display_link" href="janesgarden.html"><img class="case_study_display_img" src="/Images/index_grid/1.png">
             </div>
-
+            <div class="case_study_text">
+                <h3 class="case_study_display_title">JANE'S GARDEN</h3>
+                <p class="case_study_display_description">Connecting plant owners with a dynamic care manual</p></a>
+                <p class="case_study_arrow">View case study →</p>
+            </div>
         </div>
-    
+
+        <div class="case_study_display_three">
+            <a class="case_study_display_link" href="designme.html">
+            <img class="case_study_display_img" src="/Images/index_grid/2.png">
+            <div class="case_study_text">
+                <div><h3 class="case_study_display_title">DESIGNME</h3></div>
+                <div><p class="case_study_display_description">Organize existing pieces with potential new finds</p></a></div>
+                <p class="case_study_arrow">View case study →</p>
+            </div>
+        </div>
     </div>
-
 
 
     <footer class="footer_wrapper">

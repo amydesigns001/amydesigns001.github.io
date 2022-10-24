@@ -24,6 +24,8 @@ body {
   
   .main_header_left {
     grid-column: 1 / 2; 
+    justify-self: center;
+    align-self: center;
   }
   
   .main_header_logo {
@@ -52,7 +54,6 @@ body {
     gap: 45px;
     align-items: center;
     justify-content: center;
-    padding: 20px 0 40px 0;
     margin: 0;
   }
   
@@ -63,13 +64,15 @@ body {
   
   .nav_item {
   font-family: lexend;
-  font-size: 20px;
-  font-weight: 350;
+  font-size: 18px;
+  font-weight: 300;
+  color: #767679;
+  opacity: 80%;
   }
   
   .nav_decoration[aria-current="page"] {
-  text-decoration: underline wavy #f8c348 0.15rem;
-  text-underline-offset: 0.5rem;
+    color: black;
+    font-weight: 500;
   }
   
   .btn {
@@ -80,6 +83,79 @@ body {
   
   /* NAVBAR - End */
 
+
+  .case_study_display {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 20px 20px 20px;
+  }
+  
+  .case_study_display_img {
+    width: 600px;
+    height: 450px;
+  }
+  
+  .case_study_text {
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    line-height: 2.3rem;
+  }
+  
+  h3.case_study_display_title {
+    font-family: 'lexend';
+    font-size: 19px;
+    font-weight: 400;
+    text-align: Left;
+    color:black;
+    opacity: 70%;
+  }
+  
+  p.case_study_display_description {
+    font-family: 'lexend';
+    font-size: 26px;
+    font-weight: 400;
+    text-align: left;
+  
+  }
+  
+  .case_study_arrow {
+    font-family: 'Lexend';
+    font-size: 18px;
+    font-weight: 350;
+    color:#767679;
+  }
+  
+  .case_study_display_link {
+    color: black;
+  }
+  
+  .case_study_display_one {
+    display: flex;
+    flex-direction: row;
+    width: 1000px;
+    height: 450px;
+    padding: 25px;
+  }
+  
+  .case_study_display_two {
+    display: flex;
+    flex-direction: row;
+    width: 1000px;
+    height: 450px;
+    padding: 25px;
+  }
+  
+  .case_study_display_three {
+    display: flex;
+    flex-direction: row;
+    width: 1000px;
+    height: 450px;
+    padding: 25px;
+  }
+  
 /* IN-PAGE NAVBAR – Start */
 
 [data-tab-content] {
@@ -215,13 +291,14 @@ p.brief_body {
   font-size: 20px;
   font-weight: 275;
   font-family: 'Lexend';
+  letter-spacing: 0.02rem;
 }
 
 .intro_text {
   font-size: 20px;
   font-weight: 300;
   font-family: 'Lexend';
-  letter-spacing: 0.02rem;
+  letter-spacing: 0.03rem;
   padding-top: 100px;
   width: 350px;
 }

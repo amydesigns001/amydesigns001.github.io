@@ -32,6 +32,14 @@
 <body>
     <header class="main_header">
         <div class="main_header_left">
+            <div class="nav_container">
+                <ul class="navbar_flexbox" id="menu">
+                    <li class="nav_item">
+                        <a href="/case_studies.html" class="nav_decoration btn">WORK</a></li>
+                    <li class="nav_item">
+                        <a href="/about me.html" class="nav_decoration btn">ABOUT ME</a></li>
+                </ul>
+            </div>
         </div>
         <div class="main_header_logo">
             <h1 class="logo">
@@ -39,8 +47,8 @@
         </div>
         <div class="main_header_right">
             <div class="linkedin_github">
-                <a class="header_link" href="https://www.linkedin.com/in/amy-carms/"><img src=Images/linkedin.png width="40px" height="40px"></a>
-                <a class="header_link" href="https://github.com/amydesigns001/amydesigns001.github.io"><img src=Images/github.png width="40px" height="40px"></a>
+                <a class="header_link" href="https://www.linkedin.com/in/amy-carms/"><img src=Images/linkedin.png width="30px" height="30px"></a>
+                <a class="header_link" href="https://github.com/amydesigns001/amydesigns001.github.io"><img src=Images/github.png width="30px" height="30px"></a>
             </div>
             <div class="hamburger_parent grid_child">
                 <div class="hamburger_icon burger_flex">
@@ -52,23 +60,11 @@
         </div>
     </header>
 
-    <div class="nav_container">
-        <ul class="navbar_flexbox" id="menu">
-            <li class="nav_item">
-                <a href="/index.html" class="nav_decoration btn">HOME</a></li>
-            <li class="nav_item">
-                <a href="/about me.html" class="nav_decoration btn">ABOUT ME</a></li>
-            <li class="nav_item">
-                <a href="/case_studies.html" class="nav_decoration btn">CASE STUDIES</a></li>
-            <li class="nav_item">
-                <a href="/photography.html" class="nav_decoration btn">PHOTOGRAPHY</a></li>
-        </ul>
-    </div>
 
     <div class="artist_statement">
         <div class="artist_container">
             <h1 class="artist_heading">Amy Carmichael <font color="#FF8EDF">Yoo</font>,<br>Product Designer</h1><br>
-            <h2 class="statement">There once was a woman, in a small Brooklyn apartment, who sat at her computer. She was <b>curious</b> about every small detail; she was <b>hungry to learn</b> the story of its beginnings.<br> <br>She was a fighter.<b> Immigrant mentality.</b> She endured and persevered till solutions came to being, because that was the thrill of it.</h2>
+            <h2 class="statement">There once was a woman, in a small Brooklyn apartment, who sat at her computer. She was <b class="bold_text">curious</b> about every small detail; she was <b class="bold_text">hungry to learn</b> the beginnings of every story.<br> <br>She was a fighter.<b class="bold_text"> Immigrant mentality.</b> She endured and persevered till solutions came to being, because that was the thrill of it.</h2>
         </div>
     </div>
     <br>
@@ -76,19 +72,25 @@
     <br>
     <div class="case_study_display">
         <div class="case_study_display_one">
-            <a class="case_study_display_link" href="rover.html">
-            <img class="case_study_display_img" src="/Images/index_grid/3.png">
+            <div>
+                <a class="case_study_display_link" href="rover.html">
+                <img class="case_study_display_img" src="/Images/index_grid/3.png">
+            </div>
             <div class="case_study_text">
-                <div><h3 class="case_study_display_title">ROVER</h3></div>
-                <div><p class="case_study_display_description">A re-discovery of the app's features and what optimization could look like.</p></a></div>
+                <h3 class="case_study_display_title">ROVER</h3>
+                <p class="case_study_display_description">Scheduling optimization for more sitter engagement</p></a>
+                <p class="case_study_arrow">View case study →</p>
             </div>
         </div>
 
         <div class="case_study_display_two">
-            <a class="case_study_display_link" href="janesgarden.html"><img class="case_study_display_img" src="/Images/index_grid/1.png">
+            <div>
+                <a class="case_study_display_link" href="janesgarden.html"><img class="case_study_display_img" src="/Images/index_grid/1.png">
+            </div>
             <div class="case_study_text">
-                <div><h3 class="case_study_display_title">JANE'S GARDEN</h3></div>
-                <div><p class="case_study_display_description">An app for new plant owners to purchase plants and reference plant care guides.</p></a></div>
+                <h3 class="case_study_display_title">JANE'S GARDEN</h3>
+                <p class="case_study_display_description">Connecting plant owners with a dynamic care manual</p></a>
+                <p class="case_study_arrow">View case study →</p>
             </div>
         </div>
 
@@ -97,7 +99,8 @@
             <img class="case_study_display_img" src="/Images/index_grid/2.png">
             <div class="case_study_text">
                 <div><h3 class="case_study_display_title">DESIGNME</h3></div>
-                <div><p class="case_study_display_description">An app to purchase furniture and organize existing pieces in your home.</p></a></div>
+                <div><p class="case_study_display_description">Organize existing pieces with potential new finds</p></a></div>
+                <p class="case_study_arrow">View case study →</p>
             </div>
         </div>
     </div>

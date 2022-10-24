@@ -24,6 +24,8 @@ a {
 
 .main_header_left {
   grid-column: 1 / 2; 
+  justify-self: center;
+  align-self: center;
 }
 
 .main_header_logo {
@@ -53,7 +55,6 @@ flex-wrap: wrap;
 gap: 45px;
 align-items: center;
 justify-content: center;
-padding: 20px 0;
 margin: 0;
 }
 
@@ -64,13 +65,15 @@ padding: 0;
 
 .nav_item {
 font-family: lexend;
-font-size: 20px;
-font-weight: 350;
+font-size: 18px;
+font-weight: 300;
+color: #767679;
+opacity: 80%;
 }
 
 .nav_decoration[aria-current="page"] {
-text-decoration: underline wavy #f8c348 0.15rem;
-text-underline-offset: 0.5rem;
+  color: black;
+  font-weight: 500;
 }
 
 .btn {
@@ -90,7 +93,7 @@ cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 65px 20px 0 20px;
+  margin: 140px 20px 100px 20px;
 
 }
 
@@ -102,15 +105,22 @@ cursor: pointer;
 
 h1.artist_heading {
   font-family: 'lexend';
-  font-size: 32px;
+  font-size: 38px;
   font-weight: 450;
 }
 
 h2.statement {
   font-family: 'lexend';
-  font-weight: 250;
+  font-weight: 300;
   font-size: 23px;
+  line-height: 2rem;
 }
+
+.bold_text {
+  font-weight: 550;
+}
+
+/*  CASE STUDIES  */
 
 .case_study_display {
   display: flex;
@@ -121,29 +131,39 @@ h2.statement {
 }
 
 .case_study_display_img {
-  width: 950px;
+  width: 600px;
   height: 450px;
 }
 
 .case_study_text {
   display: flex;
-  flex-direction: row;
-  padding-top: 30px;
+  flex-direction: column;
+  padding-left: 30px;
+  line-height: 2.3rem;
 }
 
 h3.case_study_display_title {
   font-family: 'lexend';
-  font-size: 20px;
+  font-size: 19px;
   font-weight: 400;
   text-align: Left;
-  padding-right: 80px;
+  color:black;
+  opacity: 70%;
 }
 
 p.case_study_display_description {
   font-family: 'lexend';
-  font-size: 20px;
-  font-weight: 300;
+  font-size: 26px;
+  font-weight: 400;
   text-align: left;
+
+}
+
+.case_study_arrow {
+  font-family: 'Lexend';
+  font-size: 18px;
+  font-weight: 350;
+  color:#767679;
 }
 
 .case_study_display_link {
@@ -151,21 +171,27 @@ p.case_study_display_description {
 }
 
 .case_study_display_one {
-  width: 950px;
-  height: 700px;
-  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  width: 1000px;
+  height: 450px;
+  padding: 25px;
 }
 
 .case_study_display_two {
-  width: 950px;
-  height: 700px;
-  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  width: 1000px;
+  height: 450px;
+  padding: 25px;
 }
 
 .case_study_display_three {
-  width: 950px;
-  height: 700px;
-  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  width: 1000px;
+  height: 450px;
+  padding: 25px;
 }
 
 /* Footer – Beginning */
