@@ -81,8 +81,73 @@ body {
   cursor: pointer;
   }
   
-  /* NAVBAR - End */
+  /*    CASE STUDIES    */
 
+  .case_study_section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 90px;
+  }
+
+  .title_text_container {
+    width: 400px;
+    text-align: left;
+    font-family: 'Lexend';
+    padding-top: 50px;
+    padding-left: 50px;
+    line-height: 2em;
+    letter-spacing: 0.03em;
+  }
+
+  .case_study_title {
+    font-size: 30px;
+    text-align: left;
+    font-weight: 520;
+    font-family: 'lexend';
+  }
+
+  .title_bold {
+    font-weight: 575;
+  }
+
+  .title_section {
+    text-align: left;
+    font-size: 20px;
+    font-weight: 375;
+  }
+
+  .case_study_img {
+    width: 250px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 40px;
+  }
+
+  .brief_container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    font-family: 'Lexend';
+    padding-bottom: 40px;
+  }
+  
+  .brief_title {
+    width: 100%;
+    font-size: 25px;
+    text-align: left;
+    font-weight: 575;
+    padding-left: 40px;
+  }
+  
+  p.brief_body {
+    font-size: 20px;
+    font-weight: 300;
+    font-family: 'Lexend';
+    letter-spacing: 0.04rem;
+  }
 
   .case_study_display {
     display: flex;
@@ -128,6 +193,24 @@ body {
     color:#767679;
   }
   
+  .img_overlay {
+    position: relative;
+    text-align: center;
+    color: black;
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+
+  .text_overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Lexend';
+    font-size: 35px;
+    width: 75%;
+  }
+
   .case_study_display_link {
     color: black;
   }
@@ -156,54 +239,6 @@ body {
     padding: 25px;
   }
   
-/* IN-PAGE NAVBAR – Start */
-
-[data-tab-content] {
-  display: none;
-}
-
-.active[data-tab-content] {
-  display: block;
-}
-
-body {
-  padding: 0;
-  margin: 0;
-}
-
-.tabs {
-  display: flex;
-  justify-content: center;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  gap: 20px;
-}
-
-.ullist {
-  font-family: 'Lexend';
-  font-size: 20px;
-  font-weight: 350;
-}
-
-.tab {
-  cursor: pointer;
-  padding: 10px;
-}
-
-.tab.active {
-  background-color: #f8c348;
-}
-
-.tab:hover {
-  background-color: #f8c348;
-}
-
-.tab-content {
-  margin: 50px 150px 50px 150px;
-}
-
-/* IN-PAGE NAVBAR – End */
 
 .case_study_container {
   width: 900px;
@@ -215,26 +250,10 @@ body {
   margin: 50px 200px;
 }
 
-.case_study_title {
-  font-family: 'Lexend';
-  font-size: 30px;
-  font-weight: 400;
-  text-align: center;
-}
-
 p.case_study_body {
   font-family: 'Lexend';
   font-size: 18px;
   font-weight: 300;
-}
-
-.case_study_img {
-  width: 275px;
-  height: auto;
-  padding: 40px;
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 .booking_card {
@@ -273,27 +292,6 @@ p.case_study_body {
   flex-wrap: wrap;
 }
 
-
-.brief_container {
-  display: grid;
-  grid-template-columns: 30% 70%;
-  font-family: 'Lexend';
-}
-
-.brief_title {
-  width: 100%;
-  font-size: 26px;
-  text-align: left;
-  font-weight: 300;
-}
-
-p.brief_body {
-  font-size: 20px;
-  font-weight: 275;
-  font-family: 'Lexend';
-  letter-spacing: 0.02rem;
-}
-
 .intro_text {
   font-size: 20px;
   font-weight: 300;
@@ -330,7 +328,44 @@ p.brief_body {
   padding: 20px;
 }
 
+.feature_display_case {
+  display: flex;
+  flex-direction: row;
+}
 
+.brief_title {
+  font-family: 'lexend';
+}
+
+.feature_display_img {
+  width: 295px;
+  height: auto;
+  padding-left: 50px;
+}
+
+.display_case_container {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 50px;
+}
+
+.display_case_title {
+  font-family: 'Lexend';
+  font-size: 40px;
+  text-align: right;
+  font-weight: 575;
+  padding-top: 40px;
+  padding-right: 35px;
+}
+
+.growth_diary_title {
+  font-family: 'Lexend';
+  font-size: 40px;
+  text-align: right;
+  font-weight: 575;
+  padding-top: 70px;
+  padding-left: 35px;
+}
 
 /* Footer – Beginning */
 
