@@ -343,7 +343,55 @@ p.case_study_display_description {
   .case_study_display {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    width: fit-content;
+    margin: 0;
+    padding: 0 10px 0 10px ;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
   }
+
+  .case_study_display_one {
+    display: flex;
+    flex-direction: column;
+    flex-wrap:nowrap;
+    margin: 0;
+    padding: 0;
+  }
+
+  .case_study_display_two {
+    display: flex;
+    flex-direction: column;
+    flex-wrap:nowrap;
+    margin: 0;
+    padding: 0;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .case_study_display_three {
+    display: flex;
+    flex-direction: column;
+    flex-wrap:nowrap;
+    margin: 0;
+    padding: 0;
+    align-items: flex-start;
+  }
+
+  .case_study_display_img {
+    width: 330px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  .case_study_text  {
+    margin: 0;
+    padding: 0;
+    width: 330px;
+  }
+
   .footer_copyright {
     padding: 15px;
     text-align: center;
