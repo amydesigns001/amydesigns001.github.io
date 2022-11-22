@@ -105,15 +105,18 @@ cursor: pointer;
 
 h1.artist_heading {
   font-family: 'lexend';
-  font-size: 38px;
-  font-weight: 450;
+  font-size: 40px;
+  font-weight: 435;
+  padding: 10px 0 10px 0;
 }
+
 
 h2.statement {
   font-family: 'lexend';
   font-weight: 300;
   font-size: 23px;
   line-height: 2rem;
+  padding: 10px 0 10px 0;
 }
 
 .bold_text {
@@ -156,7 +159,7 @@ p.case_study_display_description {
   font-size: 26px;
   font-weight: 400;
   text-align: left;
-
+  text
 }
 
 .case_study_arrow {
