@@ -87,6 +87,7 @@ ul {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
   padding-top: 100px;
   padding-bottom: 90px;
 }
@@ -130,7 +131,7 @@ p.title_section {
 .cover {
   padding: 0;
   margin-top: 50px;
-  }
+}
 
 .case_study_display_img {
   width: 600px;
@@ -175,6 +176,11 @@ p.title_section {
 .assets {
   width: 108%;
   padding-top: 50px;
+}
+
+.notifcations {
+  width: 350px;
+
 }
 
 /* IMAGES – End */

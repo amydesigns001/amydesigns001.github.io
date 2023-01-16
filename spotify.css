@@ -1,0 +1,250 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #EFFFEF;
+  }
+  
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+  
+h1.logo {
+  font-size: 25px;
+  font-family: Lexend;
+}
+  
+a {
+  text-decoration: none;
+}
+  
+.main_header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 40px 40px 30px 30px;
+}
+  
+.main_header_left {
+  grid-column: 1 / 2; 
+  justify-self: center;
+  align-self: center;
+}
+  
+.main_header_logo {
+  grid-column: 2 / 3;
+  justify-self: center;
+  align-self: center;
+}
+  
+.main_header_right {
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+  justify-self: center;
+  align-self: center;
+}
+  
+.header_link {
+  margin-left: 20px;
+}
+  
+/* NAVBAR - Beginning */
+  
+.navbar_flexbox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 45px;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+  
+ul {
+  list-style: none;
+  padding: 0;
+}
+  
+.nav_item {
+  font-family: lexend;
+  font-size: 18px;
+  font-weight: 300;
+  color: #767679;
+  opacity: 80%;
+}
+  
+.nav_decoration[aria-current="page"] {
+  color: black;
+  font-weight: 500;
+}
+  
+.btn {
+  text-decoration: none;
+  color: var(--text);
+  cursor: pointer;
+}
+
+/*    CASE STUDIES    */
+
+.case_study_title_desc {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 200;
+  font-family: 'Lexend';
+  letter-spacing: 0.05em;
+}
+
+.case_study_section{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 200px 0;
+}
+
+.case_study_section_iv {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: black;
+  gap: 80px;
+  padding: 200px 0;
+}
+
+.iv_flexbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 27%;
+  gap: 30px;
+}
+
+.img_thumb {
+  width: 100px;
+}
+.case_study_section_v {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 200px 0;
+  gap: 70px;
+}
+
+.title_container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: 'Lexend';
+  padding: 400px 0;
+  line-height: 2em;
+  letter-spacing: 0.02em;
+  gap: 500px;
+}
+
+.case_study_title {
+  font-size: 65px;
+  text-align: left;
+  font-weight: 410;
+  font-family: 'lexend';
+}
+
+.spotify_logo {
+  width: 80px;
+}
+
+p.title_section {
+  text-align: left;
+  font-size: 25px;
+  font-weight: 150;
+  font-family: 'Lexend';
+  letter-spacing: 0.05em;
+}
+
+.case_study_img {
+  width: 300px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 85px 0;
+}
+
+.cover {
+  padding: 0;
+  margin-top: 50px;
+}
+
+.feature_intro {
+  background-color: black;
+}
+
+.feature_intro_text {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 60px;
+}
+
+.feature_intro_title {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 410;
+  font-family: 'Lexend';
+  color: white;
+}
+
+.img_savequeue {
+  width: 300px;
+}
+
+.repeat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 200px;
+  padding-bottom: 400px;
+}
+
+.img_repeat {
+  width: 150px;
+  padding: 50px;
+}
+
+.spotify_section_i {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  padding: 150px 0px;
+}
+
+.h1_spotify {
+  width: 30%;
+  text-align: center;
+  align-self: flex-start;
+  font-size: 30px;
+  font-weight: 410;
+  font-family: 'Lexend';
+}
+
+.p_spotify {
+  width: 30%;
+  text-align: left;
+  align-self: flex-start;
+  font-family: 'Lexend';
+  font-weight: 200;
+  letter-spacing: 0.03em;
+  color: #282828;
+}
+
+/* Footer – Beginning */
+
+.footer_copyright {
+  font-family: lexend;
+  font-weight: 200;
+  text-align: center;
+  padding: 20px
+}
+
+/* Footer – End */

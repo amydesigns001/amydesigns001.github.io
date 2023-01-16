@@ -173,6 +173,14 @@ p.case_study_display_description {
   color: black;
 }
 
+.case_study_display_spotify {
+  display: flex;
+  flex-direction: row;
+  width: 1000px;
+  height: 450px;
+  padding: 25px;
+}
+
 .case_study_display_one {
   display: flex;
   flex-direction: row;
