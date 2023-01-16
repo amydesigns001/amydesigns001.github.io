@@ -94,28 +94,30 @@ cursor: pointer;
   align-items: center;
   justify-content: center;
   margin: 200px 20px 100px 20px;
-
+  padding: 50px 0 150px 0;
 }
 
 .artist_container {
-  width: 600px;
+  width: 400px;
   font-family: 'lexend';
 }
 
 
 h1.artist_heading {
   font-family: 'lexend';
+  text-align: center;
   font-size: 40px;
   font-weight: 435;
-  padding: 10px 0 10px 0;
+  line-height: 3.8rem;
 }
 
 
 h2.statement {
   font-family: 'lexend';
+  text-align: center;
   font-weight: 300;
   font-size: 23px;
-  line-height: 2rem;
+  line-height: 2.8rem;
   padding: 10px 0 10px 0;
 }
 
