@@ -248,3 +248,159 @@ p.title_section {
 }
 
 /* Footer – End */
+
+@media (max-width: 415px) {
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+  }
+
+  .main_header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .main_header_left {
+    justify-self: start;
+  }
+
+  .linkedin_github {
+    display: none;
+  }
+
+  .nav_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .navbar_flexbox {
+    flex-direction: column;
+    width: 300px;
+    display: none;
+    border-radius: 15px;
+    background-color: #DFE6FF;
+    padding: 8px 0 12px 0;
+    margin-bottom: 12px;
+    margin-top: 50px;
+  }
+
+  .nav_item {
+    font-size: 20px;
+    text-align: center;
+    font-weight: 400;
+    padding: 5px 0;
+  }
+  
+  .hamburger_icon {
+    height: 2.75rem;
+    width: 2.75rem;
+    opacity: 100%;
+    background-color: black;
+    border-radius: 0.25em;
+  }
+
+  .burger_flex {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+  }
+
+  .line {
+    background-color: #B8B7B7;
+    border-radius: 5px;
+    width: 30px;
+    height: 3px;
+  }
+  
+  .hamburger_icon.isactive .line:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger_icon.isactive .line:nth-child(1) {
+    transform: translateY(11px) rotate(45deg);
+  }
+  
+  .hamburger_icon.isactive .line:nth-child(3) {
+    transform: translateY(-11px) rotate(-45deg);
+  }
+  
+  .navbar_flexbox.active {
+    display: block;
+    animation: fade .5s;
+    z-index: 2;
+  }
+
+  .main_header_logo {
+    display: block;
+    z-index: 0;
+  }
+
+  .title_container {
+    padding: 100px 0;
+    gap: 200px;
+  }
+
+  h1.case_study_title {
+    font-size: 45px;
+  }
+
+  p.case_study_title_desc {
+    font-size: 25px;
+    padding: 0 20px;
+  }
+
+  .case_study_section {
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    padding: 75px 0;
+  }
+
+  .feature_intro_text {
+    width: 75%;
+  }
+
+  .case_study_section_iv {
+    padding: 75px 0;
+  }
+
+  .case_study_section_v {
+    padding: 75px 0;
+  }
+
+  .feature_intro {
+    padding: 75px 0;
+  }
+
+  .spotify_section_i {
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding: 75px 0;
+  }
+
+  .h1_spotify {
+    width: 75%;
+    text-align: left;
+    padding: 35px;
+  }
+
+  .p_spotify {
+    width: 75%;
+    text-align: left;
+    padding: 35px;
+  }
+
+  .footer_wrapper {
+    text-align: center;
+    font-family: 'lexend';
+    font-weight: 200;
+    padding: 30px 20px;
+  }
+}
