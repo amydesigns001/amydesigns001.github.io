@@ -49,26 +49,26 @@ a {
 /* NAVBAR - Beginning */
 
 .navbar_flexbox {
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-gap: 45px;
-align-items: center;
-justify-content: center;
-margin: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 45px;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
 }
 
 ul {
-list-style: none;
-padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 .nav_item {
-font-family: lexend;
-font-size: 18px;
-font-weight: 300;
-color: #767679;
-opacity: 80%;
+  font-family: 'lexend';
+  font-size: 18px;
+  font-weight: 300;
+  color: #767679;
+  opacity: 80%;
 }
 
 .nav_decoration[aria-current="page"] {
@@ -77,9 +77,9 @@ opacity: 80%;
 }
 
 .btn {
-text-decoration: none;
-color: var(--text);
-cursor: pointer;
+  text-decoration: none;
+  color: var(--text);
+  cursor: pointer;
 }
 
 /* NAVBAR - End */
@@ -217,6 +217,71 @@ p.case_study_display_description {
 }
 
 /* Footer – End */
+@media (max-width: 900px) {
+  .case_study_display {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .case_study_display_spotify {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 20px;
+    width: auto;
+    height: auto;
+  }
+
+  .case_study_display_one {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: auto;
+    height: auto;
+    padding: 20px;
+    margin: 0;
+  }
+
+  .case_study_display_two {
+    display: flex;
+    flex-direction: column;
+    flex-wrap:nowrap;
+    align-items: flex-start;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    padding: 20px;
+    margin: 0;
+  }
+
+  .case_study_display_three {
+    display: flex;
+    flex-direction: column;
+    flex-wrap:nowrap;
+    align-items: flex-start;
+    width: auto;
+    height: auto;
+    padding: 20px;
+    margin: 0;
+  }
+
+  .case_study_display_description {
+    width: 80%;
+  }
+
+  .case_study_display_img {
+    align-self: flex-start;
+  }
+
+  .case_study_text {
+    padding: 10px 4px;
+  }
+}
 
 @media (max-width: 415px) {
   body {
@@ -224,18 +289,26 @@ p.case_study_display_description {
     padding: 0;
   }
 
+  .main_header_right {
+    display: none;
+  }
+  
+  .linkedin_github {
+    display: none;
+  }
+  
   .main_header {
-    display: grid;
+    display: flex;
+    justify-content: space-between;
+    /* display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: 1fr; */
+    margin: 30px;
   }
 
   .main_header_left {
-    justify-self: start;
-  }
-
-  .linkedin_github {
-    display: none;
+    display: flex;
+    flex-direction: column-reverse;
   }
 
   .nav_container {
@@ -248,9 +321,9 @@ p.case_study_display_description {
     flex-direction: column;
     width: 300px;
     display: none;
-    border-radius: 15px;
-    background-color: #DFE6FF;
-    padding: 8px 0 12px 0;
+    border-radius: 9px;
+    background-color: #F4ECF2;
+    padding: 12px 0;
     margin-bottom: 12px;
     margin-top: 50px;
   }
@@ -265,15 +338,11 @@ p.case_study_display_description {
   .hamburger_icon {
     height: 2.75rem;
     width: 2.75rem;
-    opacity: 100%;
-    background-color: black;
-    border-radius: 0.25em;
   }
 
   .burger_flex {
     display: flex;
     flex-direction: column;
-    background-color: white;
     justify-content: center;
     align-items: center;
     gap: 7px;
@@ -301,12 +370,6 @@ p.case_study_display_description {
   .navbar_flexbox.active {
     display: block;
     animation: fade .5s;
-    z-index: 2;
-  }
-
-  .main_header_logo {
-    display: block; 
-    z-index: 0;
   }
 
   .artist_statement {

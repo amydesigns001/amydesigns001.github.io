@@ -127,6 +127,13 @@ ul {
   gap: 70px;
 }
 
+.h3_spotify {
+  font-weight: 275;
+  width: 35%;
+  line-height: 1.2em;
+  padding-top: 80px;
+}
+
 .title_container {
   width: 100%;
   display: flex;
@@ -137,7 +144,6 @@ ul {
   padding: 400px 0;
   line-height: 2em;
   letter-spacing: 0.02em;
-  gap: 500px;
 }
 
 .case_study_title {
