@@ -213,10 +213,11 @@ p.case_study_display_description {
   font-family: lexend;
   font-weight: 200;
   text-align: center;
-  padding: 20px; 
+  padding: 175px 0 30px 0;
 }
 
 /* Footer – End */
+
 @media (max-width: 900px) {
   .case_study_display {
     display: flex;
