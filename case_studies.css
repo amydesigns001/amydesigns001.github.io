@@ -314,6 +314,14 @@ p.brief_body {
   padding: 25px;
 }
 
+.case_study_display_netflix {
+  display: flex;
+  flex-direction: row;
+  width: 1000px;
+  height: 450px;
+  padding: 25px;
+}
+
 .case_study_text {
   display: flex;
   flex-direction: column;

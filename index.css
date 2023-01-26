@@ -207,6 +207,14 @@ p.case_study_display_description {
   padding: 25px;
 }
 
+.case_study_display_netflix {
+  display: flex;
+  flex-direction: row;
+  width: 1000px;
+  height: 450px;
+  padding: 25px;
+}
+
 /* Footer – Beginning */
 
 .footer_copyright {
