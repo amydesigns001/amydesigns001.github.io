@@ -82,23 +82,31 @@ h1.logo {
     cursor: pointer;
   }
 
-.pre_title {
-    text-align: left;
-    font-size: 18px;
-    font-weight: 410;
-    font-family: 'Lexend';
-    color: #E50914;
-    padding: 250px 150px 0 150px;
-    opacity: 100%;
-}
-
 .netflix_title {
     text-align: left;
     font-size: 30px;
     font-weight: 410;
     font-family: 'Lexend';
     color: #393939;
-    padding: 9.5px 150px 100px 150px;
+    padding: 150px 150px 9.5px 150px;
+}
+
+.pre_title {
+  text-align: left;
+  font-size: 18px;
+  font-weight: 410;
+  font-family: 'Lexend';
+  padding: 9.5px 150px;
+  opacity: 100%;
+}
+
+.role {
+  font-family: "lexend";
+  font-size: 18px;
+  font-weight: 275;
+  color: #393939;
+  padding: 9.5px 150px 150px 150px;
+  line-height: .8em;
 }
 
 .jigsaw_container {
