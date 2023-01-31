@@ -550,92 +550,89 @@ p.case_study_body {
     margin: 0;
     padding: 0;
   }
-  
-  .main_header {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-  }
-  
-  .main_header_left {
-    justify-self: start;
+
+  .main_header_right {
+    display: none;
   }
   
   .linkedin_github {
     display: none;
   }
   
+  .main_header {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+  }
+
+  .main_header_left {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
   .nav_container {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-  
+
   .navbar_flexbox {
+    position: fixed;
     flex-direction: column;
-    width: 300px;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
     display: none;
-    border-radius: 15px;
-    background-color: #DFE6FF;
-    padding: 8px 0 12px 0;
-    margin-bottom: 12px;
-    margin-top: 50px;
+    border-radius: 5px;
+    background-color: #F4ECF2;
   }
-  
+
+  .navbar_flexbox.active {
+    display: block;
+    transition: 0.3s ease-out;
+    top: 14%;
+    left: 18.5%;
+    transform: translate(-50%, -50%);
+    padding: 60px 0;
+  }
+
   .nav_item {
     font-size: 20px;
     text-align: center;
     font-weight: 400;
-    padding: 5px 0;
+    padding: 30px 0;
   }
-    
+  
   .hamburger_icon {
     height: 2.75rem;
     width: 2.75rem;
-    opacity: 100%;
-    background-color: black;
-    border-radius: 0.25em;
   }
-  
+
   .burger_flex {
     display: flex;
     flex-direction: column;
-    background-color: white;
     justify-content: center;
     align-items: center;
     gap: 7px;
   }
-  
+
   .line {
     background-color: #B8B7B7;
     border-radius: 5px;
     width: 30px;
     height: 3px;
   }
-    
-    
+  
   .hamburger_icon.isactive .line:nth-child(2) {
     opacity: 0;
   }
-      
+  
   .hamburger_icon.isactive .line:nth-child(1) {
-    transform: translateY(11px) rotate(45deg);
+    transform: translateY(10px) rotate(45deg);
   }
-      
+  
   .hamburger_icon.isactive .line:nth-child(3) {
     transform: translateY(-11px) rotate(-45deg);
-  }
-    
-  
-  .navbar_flexbox.active {
-    display: block;
-    animation: fade .5s;
-    z-index: 2;
-  }
-
-  .main_header_logo {
-    display: block;
-    z-index: 0;
   }
 
   .artist_statement {
@@ -714,12 +711,9 @@ p.case_study_body {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: fit-content;
     margin: 0;
     align-items: center;
     justify-content: center;
-    width: 350px;
-    padding: 20px;
   }
 
   .case_study_display_spotify {
@@ -727,24 +721,26 @@ p.case_study_body {
     flex-direction: column;
     flex-wrap:nowrap;
     margin: 0;
-    padding: 0;
+    padding: 0 0 40px 0;
+    align-items: flex-start;
   }
 
   .case_study_display_one {
-      display: flex;
-      flex-direction: column;
-      flex-wrap:nowrap;
-      padding: 0 0 40px 0;
-      margin: 0;
-    }
+    display: flex;
+    flex-direction: column;
+    flex-wrap:nowrap;
+    padding: 0 0 55px 0;
+    margin: 0;
+    align-items: flex-start;
+  }
 
   .case_study_display_two {
     display: flex;
     flex-direction: column;
     flex-wrap:nowrap;
     margin: 0;
-    padding: 0 0 40px 0;
-
+    padding: 0 0 55px 0;
+    align-items: flex-start;
   }
 
   .case_study_display_three {
@@ -752,8 +748,17 @@ p.case_study_body {
     flex-direction: column;
     flex-wrap:nowrap;
     margin: 0;
-    padding: 0 0 40px 0;
+    padding: 0 0 55px 0;
+    align-items: flex-start;
+  }
 
+  .case_study_display_netflix {
+    display: flex;
+    flex-direction: column;
+    flex-wrap:nowrap;
+    margin: 0;
+    padding: 0 0 55px 0;
+    align-items: flex-start;
   }
 
   .case_study_display_img {

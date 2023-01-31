@@ -102,7 +102,6 @@ ul {
   font-family: 'lexend';
 }
 
-
 h1.artist_heading {
   font-family: 'lexend';
   text-align: center;
@@ -110,7 +109,6 @@ h1.artist_heading {
   font-weight: 435;
   line-height: 3.8rem;
 }
-
 
 h2.statement {
   font-family: 'lexend';
@@ -133,11 +131,13 @@ h2.statement {
   justify-content: center;
   align-items: center;
   padding: 20px;
+  width: 90%;
+  margin: auto;
 }
 
 .case_study_display_img {
-  width: 600px;
-  height: 450px;
+  width: 60%;
+  height: auto;
 }
 
 .case_study_text {
@@ -145,6 +145,7 @@ h2.statement {
   flex-direction: column;
   padding-left: 30px;
   line-height: 2.3rem;
+  width: 100%;
 }
 
 h3.case_study_display_title {
@@ -158,10 +159,10 @@ h3.case_study_display_title {
 
 p.case_study_display_description {
   font-family: 'lexend';
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 400;
   text-align: left;
-  text
+  width: 100%;
 }
 
 .case_study_arrow {
@@ -178,41 +179,46 @@ p.case_study_display_description {
 .case_study_display_spotify {
   display: flex;
   flex-direction: row;
-  width: 1000px;
-  height: 450px;
+  width: 75%;
+  height: auto;
   padding: 25px;
+  margin: auto;
 }
 
 .case_study_display_one {
   display: flex;
   flex-direction: row;
-  width: 1000px;
-  height: 450px;
+  width: 75%;
+  height: auto;
   padding: 25px;
+  margin: auto;
 }
 
 .case_study_display_two {
   display: flex;
   flex-direction: row;
-  width: 1000px;
-  height: 450px;
+  width: 75%;
+  height: auto;
   padding: 25px;
+  margin: auto;
 }
 
 .case_study_display_three {
   display: flex;
   flex-direction: row;
-  width: 1000px;
-  height: 450px;
+  width: 75%;
+  height: auto;
   padding: 25px;
+  margin: auto;
 }
 
 .case_study_display_netflix {
   display: flex;
   flex-direction: row;
-  width: 1000px;
-  height: 450px;
+  width: 75%;
+  height: auto;
   padding: 25px;
+  margin: auto;
 }
 
 /* Footer – Beginning */
@@ -309,9 +315,6 @@ p.case_study_display_description {
   .main_header {
     display: flex;
     justify-content: space-between;
-    /* display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr; */
     margin: 30px;
   }
 
@@ -327,21 +330,21 @@ p.case_study_display_description {
   }
 
   .navbar_flexbox {
+    position: fixed;
     flex-direction: column;
-    width: 300px;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
     display: none;
-    border-radius: 9px;
+    border-radius: 5px;
     background-color: #F4ECF2;
-    padding: 12px 0;
-    margin-bottom: 12px;
-    margin-top: 50px;
   }
 
   .nav_item {
     font-size: 20px;
     text-align: center;
     font-weight: 400;
-    padding: 5px 0;
+    padding: 30px 0;
   }
   
   .hamburger_icon {
@@ -369,7 +372,7 @@ p.case_study_display_description {
   }
   
   .hamburger_icon.isactive .line:nth-child(1) {
-    transform: translateY(11px) rotate(45deg);
+    transform: translateY(10px) rotate(45deg);
   }
   
   .hamburger_icon.isactive .line:nth-child(3) {
@@ -378,7 +381,11 @@ p.case_study_display_description {
   
   .navbar_flexbox.active {
     display: block;
-    animation: fade .5s;
+    transition: 0.3s ease-out;
+    top: 37%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 60px 0;
   }
 
   .artist_statement {
@@ -399,11 +406,9 @@ p.case_study_display_description {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: fit-content;
     margin: 0;
     align-items: center;
     justify-content: center;
-    width: 350px;
   }
 
   .case_study_display_spotify {
@@ -411,15 +416,17 @@ p.case_study_display_description {
     flex-direction: column;
     flex-wrap:nowrap;
     margin: 0;
-    padding: 0;
+    padding: 0 0 40px 0;
+    align-items: flex-start;
   }
 
   .case_study_display_one {
     display: flex;
     flex-direction: column;
     flex-wrap:nowrap;
-    padding: 0 0 40px 0;
+    padding: 0 0 55px 0;
     margin: 0;
+    align-items: flex-start;
   }
 
   .case_study_display_two {
@@ -427,9 +434,8 @@ p.case_study_display_description {
     flex-direction: column;
     flex-wrap:nowrap;
     margin: 0;
-    padding: 0 0 40px 0;
+    padding: 0 0 55px 0;
     align-items: flex-start;
-    justify-content: center;
   }
 
   .case_study_display_three {
@@ -437,7 +443,16 @@ p.case_study_display_description {
     flex-direction: column;
     flex-wrap:nowrap;
     margin: 0;
-    padding: 0 0 40px 0;
+    padding: 0 0 55px 0;
+    align-items: flex-start;
+  }
+
+  .case_study_display_netflix {
+    display: flex;
+    flex-direction: column;
+    flex-wrap:nowrap;
+    margin: 0;
+    padding: 0 0 55px 0;
     align-items: flex-start;
   }
 
@@ -445,13 +460,17 @@ p.case_study_display_description {
     width: 330px;
     height: auto;
     margin: 0;
-    padding: 0;
+    padding: 0 0 10px 0;
   }
 
   .case_study_text  {
     margin: 0;
     padding: 0;
-    width: 330px;
+    width: 100%;
+  }
+
+  .case_study_display_description {
+    width: 100%;;
   }
 
   .footer_wrapper {
