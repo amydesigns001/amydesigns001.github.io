@@ -340,6 +340,15 @@ p.case_study_display_description {
     background-color: #F4ECF2;
   }
 
+  .navbar_flexbox.active {
+    display: block;
+    transition: 0.3s ease-out;
+    top: 37%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 60px 0;
+  }
+
   .nav_item {
     font-size: 20px;
     text-align: center;
@@ -377,15 +386,6 @@ p.case_study_display_description {
   
   .hamburger_icon.isactive .line:nth-child(3) {
     transform: translateY(-11px) rotate(-45deg);
-  }
-  
-  .navbar_flexbox.active {
-    display: block;
-    transition: 0.3s ease-out;
-    top: 37%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 60px 0;
   }
 
   .artist_statement {
