@@ -435,9 +435,10 @@ p.case_study_body {
   width: 27%;
 }
 
-.jg {
+#janes_main_title {
   line-height: 100%;
   padding-left: 20px;
+  color: #313034;
 }
 
 .jg_cover {
@@ -454,23 +455,35 @@ p.case_study_body {
   margin-left: 19px;
 }
 
-.jg_width {
-  width: 33%;
+.jg_brief {
+  padding-bottom: 300px;
+}
+
+.janes_header_format {
   font-family: 'Lexend';
   font-size: 40px;
+  color: #313034;
+  font-weight: 525;
+}
+
+#janes_header_i {
   text-align: right;
-  font-weight: 575;
-  padding-top: 140px;
+  padding: 220px 40px 0 0;
+  width: 23%;
+}
+
+#janes_header_ii {
+  text-align: Left;
+  padding-top: 220px;
+  padding-left: 35px;
+  width: 23%;
+}
+
+#janes_header_iii {
+  text-align: right;
+  padding-top: 220px;
   padding-right: 50px;
-}
-
-.jg_brief {
-  padding-bottom: 80px;
-}
-
-.jg_title_one {
-  padding-right: 40px;
-  }
+  width: 34%;
 }
 
 .janesgarden_title_container {
@@ -489,6 +502,48 @@ p.case_study_body {
   padding: 15px;
 }
 
+#janes_intro_div {
+  padding-top: 350px;
+}
+
+#janes_problem_div {
+  display: flex;
+  justify-content: center;
+  padding: 200px 0 300px 0;
+}
+
+#janes_problem_header {
+  font-family: 'Lexend';
+  font-size: 30px;
+  font-weight: 400;
+  text-align: center;
+  width: 43%;
+  background-color: #F6F5F9;
+  padding: 145px 120px;
+  border-radius: 13px;
+  color: #0E0917;
+}
+
+#janes_design_system_div {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 200px;
+  padding-bottom: 300px;
+}
+
+#janes_design_system_img {
+  width: 50%;
+  padding: 75px;
+}
+
+#janes_design_system_img_lg {
+  width: 100%;
+  padding: 75px 0;
+}
+
 .brief_title {
   font-family: 'lexend';
 }
@@ -505,16 +560,6 @@ p.case_study_body {
   text-align: right;
   font-weight: 575;
   padding-top: 150px;
-  width: 20%;
-}
-
-.growth_diary_title {
-  font-family: 'Lexend';
-  font-size: 40px;
-  text-align: Left;
-  font-weight: 575;
-  padding-top: 160px;
-  padding-left: 35px;
   width: 20%;
 }
 
